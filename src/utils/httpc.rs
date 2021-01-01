@@ -1,42 +1,58 @@
-use reqwest::{Client, RequestBuilder, Url};
+extern crate hyper;
+use hyper::{body, client::HttpConnector, Body, Client, Response, Uri};
+use hyper_tls::HttpsConnector;
+use serde::Deserialize;
+use std::error::Error;
 
-lazy_static! {
-  static ref BASE_URL: Url = Url::parse("https://api.jikan.moe/v3/").unwrap();
-}
+static BASE_URL: &'static str = "https://api.jikan.moe/v3";
 
 pub struct JikanHttpClient {
-  client: Client,
+  client: Client<HttpsConnector<HttpConnector>>,
 }
 
 impl JikanHttpClient {
   pub fn new() -> Self {
-    let client = Client::builder().https_only(true).build().unwrap();
+    let mut https = HttpsConnector::new();
+    https.https_only(true);
+
+    let client = Client::builder().build::<_, Body>(https);
+
     JikanHttpClient { client }
   }
 
-  pub fn get(&self, path: &str) -> RequestBuilder {
-    let url = BASE_URL.clone();
-    let url = url.join(path).expect("path parsing error");
-    self.client.get(url)
-  }
+  pub async fn get<T>(&self, path: &str) -> Result<Response<T>, Box<dyn Error>>
+  where
+    for<'de> T: Deserialize<'de>,
+  {
+    let url: Uri = format!("{}{}", &BASE_URL, path).parse()?;
 
-  pub fn post(&self, path: &str) -> RequestBuilder {
-    let url = BASE_URL.clone();
-    let url = url.join(path).expect("path parsing error");
-    self.client.post(url)
+    let response = self.client.get(url).await?;
+    let (parts, body) = response.into_parts();
+    let body = &body::to_bytes(body).await?;
+    let body = serde_json::from_slice(body)?;
+
+    Ok(Response::from_parts(parts, body))
   }
 }
 
 #[cfg(test)]
 mod tests {
   use super::*;
+  use derive_getters::Getters;
+  use serde::{Deserialize, Serialize};
 
-  #[actix_rt::test]
-  async fn can_call_base_url() {
+  #[derive(Deserialize, Getters, Serialize)]
+  struct About {
+    #[serde(rename = "Website")]
+    website: String,
+  }
+
+  #[tokio::test]
+  async fn can_call_base_url() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
-    let response = client.get("").send().await;
-    let body = response.unwrap();
-    let body: &str = &body.text().await.unwrap()[..];
-    assert!(!body.is_empty());
+    let response_body = client.get::<About>("").await?.into_body();
+    assert!(response_body.website().contains("jikan.moe"));
+
+    Ok(())
   }
 }

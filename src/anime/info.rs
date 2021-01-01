@@ -117,9 +117,8 @@ pub struct Info {
 
 impl Info {
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    let response = client.get(&format!("anime/{}", id)[..]).send().await?;
-
-    Ok(response.json().await?)
+    let response = client.get::<Self>(&format!("/anime/{}", id)).await?;
+    Ok(response.into_body())
   }
 }
 
@@ -131,7 +130,7 @@ mod tests {
   use std::error::Error;
   use std::thread;
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_get_info_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -150,7 +149,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_handle_anime_404() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();

@@ -22,7 +22,7 @@ pub fn get_valid_animes(count: usize) -> Vec<AnimeTestSuite> {
   let mut result = vec![
     AnimeTestSuite {
       id: 20,
-      name: String::from("NARUTO"),
+      name: String::from("Naruto"),
     },
     AnimeTestSuite {
       id: 21,

@@ -26,9 +26,8 @@ pub struct News {
 
 impl News {
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    let response = client.get(&format!("anime/{}/news", id)).send().await?;
-
-    Ok(response.json().await?)
+    let response = client.get::<Self>(&format!("/anime/{}/news", id)).await?;
+    Ok(response.into_body())
   }
 }
 
@@ -40,7 +39,7 @@ mod tests {
   use std::error::Error;
   use std::thread;
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_get_news_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -59,7 +58,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_handle_news_404() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();

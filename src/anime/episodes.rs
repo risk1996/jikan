@@ -32,12 +32,9 @@ impl Episodes {
     page: u32,
   ) -> Result<Self, Box<dyn Error>> {
     let response = client
-      .get(&format!("anime/{}/episodes/{}", id, page)[..])
-      .send()
+      .get::<Self>(&format!("/anime/{}/episodes/{}", id, page))
       .await?;
-    println!("{:?}", response);
-
-    Ok(response.json().await?)
+    Ok(response.into_body())
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
@@ -54,7 +51,7 @@ mod tests {
   use std::error::Error;
   use std::thread;
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_get_episodes_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -73,7 +70,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_handle_episodes_empty_episodes() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -92,7 +89,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_get_episodes_by_id_at_page() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -113,7 +110,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_handle_episodes_empty_episodes_at_page() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();

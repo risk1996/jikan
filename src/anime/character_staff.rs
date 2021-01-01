@@ -137,12 +137,9 @@ impl CharactersStaff {
     id: u32,
   ) -> Result<CharactersStaff, Box<dyn Error>> {
     let response = client
-      .get(&format!("anime/{}/characters_staff", id)[..])
-      .send()
+      .get::<Self>(&format!("/anime/{}/characters_staff", id))
       .await?;
-    println!("{:?}", response);
-
-    Ok(response.json().await?)
+    Ok(response.into_body())
   }
 }
 
@@ -154,7 +151,7 @@ mod tests {
   use std::error::Error;
   use std::thread;
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_get_characters_staff_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
@@ -173,7 +170,7 @@ mod tests {
     Ok(())
   }
 
-  #[actix_rt::test]
+  #[tokio::test]
   #[serial]
   async fn can_handle_characters_staff_404() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();

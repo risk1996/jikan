@@ -51,7 +51,7 @@ impl Anime {
   /// async fn main() {
   ///   let naruto = get_naruto().await;
   ///   assert_eq!(naruto.id(), &20u32);
-  ///   assert_eq!(naruto.title(), "NARUTO");
+  ///   assert_eq!(naruto.title(), "Naruto");
   ///   assert_eq!(naruto.is_airing(), &false);
   ///   assert_eq!(
   ///     naruto.airing_status(),
