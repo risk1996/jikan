@@ -5,21 +5,29 @@ use std::cmp::PartialEq;
 use std::error::Error;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Picture {
-  large: String,
-  small: String,
+pub struct PromoVideo {
+  image_url: String,
+  title: String,
+  video_url: String,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Pictures {
-  pictures: Vec<Picture>,
+pub struct EpisodeVideo {
+  episode: String,
+  iamge_url: String,
+  title: String,
+  url: String,
 }
 
-impl Pictures {
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct Videos {
+  promo: Vec<PromoVideo>,
+  episodes: Vec<EpisodeVideo>,
+}
+
+impl Videos {
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    let response = client
-      .get::<Self>(&format!("/anime/{}/pictures", id))
-      .await?;
+    let response = client.get::<Self>(&format!("/anime/{}/videos", id)).await?;
     Ok(response.into_body())
   }
 }
@@ -34,14 +42,14 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_get_pictures_by_id() -> Result<(), Box<dyn Error>> {
+  async fn can_get_videos_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
-      let pictures = Pictures::from_id(&client, id).await;
+      let videos = Videos::from_id(&client, id).await;
 
-      match pictures {
-        Ok(_) => assert!(pictures.is_ok(), "{}", name),
+      match videos {
+        Ok(_) => assert!(videos.is_ok(), "{}", name),
         Err(_) => continue,
       }
 
@@ -53,12 +61,12 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_handle_pictures_404() -> Result<(), Box<dyn Error>> {
+  async fn can_handle_videos_404() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
       assert!(
-        Pictures::from_id(&client, id).await.is_err(),
+        Videos::from_id(&client, id).await.is_err(),
         "Response for anime \"{}\" is not 404",
         name,
       );

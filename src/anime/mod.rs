@@ -1,14 +1,20 @@
-use self::character_staff::CharactersStaff;
-use self::episodes::Episodes;
-use self::info::Info;
-use self::news::News;
+pub use self::character_staff::{CharactersStaff, *};
+pub use self::episodes::{Episodes, *};
+pub use self::info::{Info, *};
+pub use self::news::{News, *};
+pub use self::pictures::{Pictures, *};
+pub use self::stats::{Stats, *};
+pub use self::videos::{Videos, *};
 use super::utils::httpc::JikanHttpClient;
 use std::error::Error;
 
-pub mod character_staff;
-pub mod episodes;
-pub mod info;
-pub mod news;
+mod character_staff;
+mod episodes;
+mod info;
+mod news;
+mod pictures;
+mod stats;
+mod videos;
 
 mod test_helper;
 
