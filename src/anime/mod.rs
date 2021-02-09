@@ -1,6 +1,8 @@
 pub use self::character_staff::{CharactersStaff, *};
 pub use self::episodes::{Episodes, *};
+pub use self::forum::{Forum, *};
 pub use self::info::{Info, *};
+pub use self::more_info::MoreInfo;
 pub use self::news::{News, *};
 pub use self::pictures::{Pictures, *};
 pub use self::stats::{Stats, *};
@@ -10,7 +12,9 @@ use std::error::Error;
 
 mod character_staff;
 mod episodes;
+mod forum;
 mod info;
+mod more_info;
 mod news;
 mod pictures;
 mod stats;
