@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "author_name": "tsubasalover",
+      "author_url": "https://myanimelist.net/profile/tsubasalover",
+      "comments": 513,
+      "date": "2017-05-03T07:07:00+00:00",
+      "forum_url": "https://myanimelist.net/forum/?topicid=1611955",
+      "image_url": "https://cdn.myanimelist.net/s/common/uploaded_files/1493820148-ac57b35411bf7ae6439ee7bd8887636a.jpeg?s=3254100fbceed9b7a22bfa9e2c8d4bc5",
+      "intro": "To commemorate one hundred years of Japanese anime history, NHK has announced a list of 100 Best Anime on Wednesday at NHK BS Premium. The list is based on the audi...",
+      "title": "NHK Announces Best 100 Anime",
+      "url": "https://myanimelist.net/news/50582644"
+    },
+    {
+      "author_name": "dtshyk",
+      "author_url": "https://myanimelist.net/profile/dtshyk",
+      "comments": 72,
+      "date": "2011-07-20T20:11:00+00:00",
+      "forum_url": "https://myanimelist.net/forum/?topicid=307841",
+      "image_url": "https://cdn.myanimelist.net/s/common/uploaded_files/1458134347-3506132902a059440afbfdfb13eb11ef.jpeg?s=126a1c24400dbc1f1ae2f00bdcb5503e",
+      "intro": "Could be a nasty troll. According to Shueisha's notice to bookstores, a new TV anime of Hunter x Hunter will be announced around the release of the 29th volume ...",
+      "title": "New TV Anime of Hunter x Hunter Leaked",
+      "url": "https://myanimelist.net/news/11114013"
+    }
+  ],
+  "request_cache_expiry": 86400,
+  "request_cached": true,
+  "request_hash": "request:anime:a82e43b2dc29c3c52389803ce71c4b4a6f9c2285"
+}

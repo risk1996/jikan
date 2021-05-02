@@ -1,0 +1,6 @@
+{
+  "error": "404 on https://myanimelist.net/anime/4207/_/characters",
+  "message": "Resource does not exist",
+  "status": 404,
+  "type": "BadResponseException"
+}

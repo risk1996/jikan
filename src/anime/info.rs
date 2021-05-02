@@ -124,44 +124,55 @@ impl Info {
 
 #[cfg(test)]
 mod tests {
+  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::{test_helper, test_helper::AnimeTestSuite};
   use super::*;
-  use serial_test::serial;
+  use httpmock::MockServer;
   use std::error::Error;
-  use std::thread;
 
   #[tokio::test]
-  #[serial]
   async fn can_get_info_by_id() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
+    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}", id));
+        then
+          .status(200)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/info_{}.json",
+            id
+          )));
+      });
+
       let info = Info::from_id(&client, id).await;
-
-      match info {
-        Ok(_) => assert_eq!(info?.id(), &id, "{}", name),
-        Err(_) => continue,
-      }
-
-      thread::sleep(test_helper::REQUEST_DELAY);
+      mock.assert();
+      assert_eq!(info?.id(), &id, "{}", name);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  #[serial]
-  async fn can_handle_anime_404() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+  async fn can_handle_info_404() -> Result<(), Box<dyn Error>> {
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
-      assert!(
-        Info::from_id(&client, id).await.is_err(),
-        "Response for anime \"{}\" is not 404",
-        name,
-      );
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}", id));
+        then
+          .status(404)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/info_{}.json",
+            id
+          )));
+      });
 
-      thread::sleep(test_helper::REQUEST_DELAY);
+      let info = Info::from_id(&client, id).await;
+      mock.assert();
+      assert!(info.is_err(), "Response for anime \"{}\" is not 404", name);
     }
 
     Ok(())

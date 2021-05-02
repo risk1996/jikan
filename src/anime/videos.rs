@@ -14,7 +14,7 @@ pub struct PromoVideo {
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct EpisodeVideo {
   episode: String,
-  iamge_url: String,
+  image_url: String,
   title: String,
   url: String,
 }
@@ -34,44 +34,55 @@ impl Videos {
 
 #[cfg(test)]
 mod tests {
+  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::{test_helper, test_helper::AnimeTestSuite};
   use super::*;
-  use serial_test::serial;
+  use httpmock::MockServer;
   use std::error::Error;
-  use std::thread;
 
   #[tokio::test]
-  #[serial]
   async fn can_get_videos_by_id() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
+    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}/videos", id));
+        then
+          .status(200)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/videos_{}.json",
+            id
+          )));
+      });
+
       let videos = Videos::from_id(&client, id).await;
-
-      match videos {
-        Ok(_) => assert!(videos.is_ok(), "{}", name),
-        Err(_) => continue,
-      }
-
-      thread::sleep(test_helper::REQUEST_DELAY);
+      mock.assert();
+      assert!(videos.is_ok(), "{}", name);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  #[serial]
   async fn can_handle_videos_404() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
-      assert!(
-        Videos::from_id(&client, id).await.is_err(),
-        "Response for anime \"{}\" is not 404",
-        name,
-      );
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}/videos", id));
+        then
+          .status(404)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/videos_{}.json",
+            id
+          )));
+      });
 
-      thread::sleep(test_helper::REQUEST_DELAY);
+      let video = Videos::from_id(&client, id).await;
+      mock.assert();
+      assert!(video.is_err(), "Response for anime \"{}\" is not 404", name,);
     }
 
     Ok(())

@@ -1,0 +1,148 @@
+{
+  "aired": {
+    "from": "1999-10-16T00:00:00+00:00",
+    "prop": {
+      "from": {
+        "day": 16,
+        "month": 10,
+        "year": 1999
+      },
+      "to": {
+        "day": 31,
+        "month": 3,
+        "year": 2001
+      }
+    },
+    "string": "Oct 16, 1999 to Mar 31, 2001",
+    "to": "2001-03-31T00:00:00+00:00"
+  },
+  "airing": false,
+  "background": null,
+  "broadcast": "Saturdays at 18:00 (JST)",
+  "duration": "23 min per ep",
+  "ending_themes": [
+    "#1: \"Kaze no Uta; Song of the Wind\" by Minako Honda (eps 1-31)",
+    "#2: \"E-Jan - Do You Feel Like I Feel\" by Masato Nagai (eps 32-50)",
+    "#3: \"Hotaru\" by Masato Nagai (eps 51-62)"
+  ],
+  "episodes": 62,
+  "favorites": 9996,
+  "genres": [
+    {
+      "mal_id": 1,
+      "name": "Action",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/genre/1/Action"
+    },
+    {
+      "mal_id": 2,
+      "name": "Adventure",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/genre/2/Adventure"
+    },
+    {
+      "mal_id": 31,
+      "name": "Super Power",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/genre/31/Super_Power"
+    },
+    {
+      "mal_id": 10,
+      "name": "Fantasy",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+    },
+    {
+      "mal_id": 27,
+      "name": "Shounen",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/genre/27/Shounen"
+    }
+  ],
+  "image_url": "https://cdn.myanimelist.net/images/anime/8/19473.jpg",
+  "licensors": [
+    {
+      "mal_id": 119,
+      "name": "VIZ Media",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/producer/119/VIZ_Media"
+    }
+  ],
+  "mal_id": 136,
+  "members": 441525,
+  "opening_themes": [
+    "#1: \"Ohayou (おはよう)\" by Keno (eps 1-48)",
+    "#2: \"Taiyou wa Yoru mo Kagayaku (太陽は夜も輝く)\" by Wino (eps 49-62)"
+  ],
+  "popularity": 331,
+  "premiered": "Fall 1999",
+  "producers": [
+    {
+      "mal_id": 169,
+      "name": "Fuji TV",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/producer/169/Fuji_TV"
+    }
+  ],
+  "rank": 150,
+  "rating": "PG-13 - Teens 13 or older",
+  "related": {
+    "Adaptation": [
+      {
+        "mal_id": 26,
+        "name": "Hunter x Hunter",
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/26/Hunter_x_Hunter"
+      }
+    ],
+    "Alternative version": [
+      {
+        "mal_id": 11061,
+        "name": "Hunter x Hunter (2011)",
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011"
+      }
+    ],
+    "Sequel": [
+      {
+        "mal_id": 137,
+        "name": "Hunter x Hunter: Original Video Animation",
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/137/Hunter_x_Hunter__Original_Video_Animation"
+      }
+    ],
+    "Side story": [
+      {
+        "mal_id": 10189,
+        "name": "Hunter x Hunter Pilot",
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/10189/Hunter_x_Hunter_Pilot"
+      }
+    ]
+  },
+  "request_cache_expiry": 19560,
+  "request_cached": true,
+  "request_hash": "request:anime:8c8c2ee6502240182af4729d6330632929f5ef1d",
+  "score": 8.41,
+  "scored_by": 203321,
+  "source": "Manga",
+  "status": "Finished Airing",
+  "studios": [
+    {
+      "mal_id": 22,
+      "name": "Nippon Animation",
+      "type": "anime",
+      "url": "https://myanimelist.net/anime/producer/22/Nippon_Animation"
+    }
+  ],
+  "synopsis": "Hunters are specialized in a wide variety of fields, ranging from treasure hunting to cooking. They have access to otherwise unavailable funds and information that allow them to pursue their dreams and interests. However, being a hunter is a special privilege, only attained by taking a deadly exam with an extremely low success rate. Gon Freecss, a 12-year-old boy with the hope of finding his missing father, sets out on a quest to take the Hunter Exam. Along the way, he picks up three companions who also aim to take the dangerous test: the revenge-seeking Kurapika, aspiring doctor Leorio Paladiknight, and a mischievous child the same age as Gon, Killua Zoldyck. Hunter x Hunter is a classic shounen that follows the story of four aspiring hunters as they embark on a perilous adventure, fighting for their dreams while defying the odds. [Written by MAL Rewrite]",
+  "title": "Hunter x Hunter",
+  "title_english": "Hunter x Hunter",
+  "title_japanese": "HUNTER×HUNTER（ハンター×ハンター）",
+  "title_synonyms": [
+    "HxH"
+  ],
+  "trailer_url": null,
+  "type": "TV",
+  "url": "https://myanimelist.net/anime/136/Hunter_x_Hunter"
+}

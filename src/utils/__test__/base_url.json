@@ -1,0 +1,11 @@
+{
+  "Author": "@irfanDahir",
+  "Discord": "https://discord.gg/4tvCr36",
+  "Docs": "https://jikan.docs.apiary.io",
+  "GitHub": "https://github.com/jikan-me/jikan",
+  "JikanPHP": "v2.16.20@b68c508cb5fac679671ead8992e4ae5d2bc0c899",
+  "PRODUCTION_API_URL": "https://api.jikan.moe/v3/",
+  "STATUS_URL": "https://status.jikan.moe",
+  "Version": "3.4",
+  "Website": "https://jikan.moe"
+}

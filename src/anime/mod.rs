@@ -1,4 +1,4 @@
-pub use self::character_staff::{CharactersStaff, *};
+pub use self::characters_staff::{CharactersStaff, *};
 pub use self::episodes::{Episodes, *};
 pub use self::forum::{Forum, *};
 pub use self::info::{Info, *};
@@ -13,7 +13,7 @@ pub use self::videos::{Videos, *};
 use super::utils::httpc::JikanHttpClient;
 use std::error::Error;
 
-mod character_staff;
+mod characters_staff;
 mod episodes;
 mod forum;
 mod info;
@@ -47,7 +47,7 @@ impl Anime {
   /// }
   /// ```
   pub fn new(id: u32) -> Self {
-    let client = JikanHttpClient::new();
+    let client = JikanHttpClient::default();
     Anime { client, id }
   }
 

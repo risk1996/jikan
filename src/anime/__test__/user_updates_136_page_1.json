@@ -1,0 +1,757 @@
+{
+  "request_cache_expiry": 86400,
+  "request_cached": false,
+  "request_hash": "request:anime:718990dcf210b153c3624b0ccf8434e054e21711",
+  "users": [
+    {
+      "date": "2021-05-02T12:56:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/luna_kay",
+      "username": "luna_kay"
+    },
+    {
+      "date": "2021-05-02T12:53:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/11975388.jpg?t=1619960400",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/itachi2955",
+      "username": "itachi2955"
+    },
+    {
+      "date": "2021-05-02T12:51:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/notaweeb2300",
+      "username": "notaweeb2300"
+    },
+    {
+      "date": "2021-05-02T12:51:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/11417565.jpg?t=1619960400",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Pasztet",
+      "username": "Pasztet"
+    },
+    {
+      "date": "2021-05-02T12:42:49+00:00",
+      "episodes_seen": 50,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/7309404.jpg?t=1619959800",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Matteoooof",
+      "username": "Matteoooof"
+    },
+    {
+      "date": "2021-05-02T12:41:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/unlikenoah69",
+      "username": "unlikenoah69"
+    },
+    {
+      "date": "2021-05-02T12:41:49+00:00",
+      "episodes_seen": 18,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12236972.jpg?t=1619959800",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Mattyxdddd",
+      "username": "Mattyxdddd"
+    },
+    {
+      "date": "2021-05-02T12:41:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12730928.jpg?t=1619959800",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/yasminehbs",
+      "username": "yasminehbs"
+    },
+    {
+      "date": "2021-05-02T12:40:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 6,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Lugaru86",
+      "username": "Lugaru86"
+    },
+    {
+      "date": "2021-05-02T12:40:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734887.jpg?t=1619960400",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Imbit_fly",
+      "username": "Imbit_fly"
+    },
+    {
+      "date": "2021-05-02T12:36:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/10140300.jpg?t=1619960400",
+      "score": null,
+      "status": "Dropped",
+      "url": "https://myanimelist.net/profile/PewSyFy",
+      "username": "PewSyFy"
+    },
+    {
+      "date": "2021-05-02T12:28:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/ani34",
+      "username": "ani34"
+    },
+    {
+      "date": "2021-05-02T12:24:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/CorpseSalad",
+      "username": "CorpseSalad"
+    },
+    {
+      "date": "2021-05-02T12:23:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734837.jpg?t=1619959200",
+      "score": 10,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/rynah_k",
+      "username": "rynah_k"
+    },
+    {
+      "date": "2021-05-02T12:20:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Fhelipe-L13",
+      "username": "Fhelipe-L13"
+    },
+    {
+      "date": "2021-05-02T12:17:49+00:00",
+      "episodes_seen": 5,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/10007413.jpg?t=1619958000",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/stefjsd",
+      "username": "stefjsd"
+    },
+    {
+      "date": "2021-05-02T12:12:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/11776419.jpg?t=1619960400",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Melgar05",
+      "username": "Melgar05"
+    },
+    {
+      "date": "2021-05-02T12:12:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12730641.jpg?t=1619958600",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/vincxntt",
+      "username": "vincxntt"
+    },
+    {
+      "date": "2021-05-02T12:11:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734774.jpg?t=1619958600",
+      "score": 8,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/4o1q",
+      "username": "4o1q"
+    },
+    {
+      "date": "2021-05-02T12:08:49+00:00",
+      "episodes_seen": 45,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/9972935.jpg?t=1619957400",
+      "score": 8,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/JakeBR__",
+      "username": "JakeBR__"
+    },
+    {
+      "date": "2021-05-02T12:07:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Padawagawa",
+      "username": "Padawagawa"
+    },
+    {
+      "date": "2021-05-02T12:03:49+00:00",
+      "episodes_seen": 12,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/10941173.jpg?t=1619961000",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/NerdyCupcake26",
+      "username": "NerdyCupcake26"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 10,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Darkthema",
+      "username": "Darkthema"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 31,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/11271721.jpg?t=1619956800",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Sourxe",
+      "username": "Sourxe"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/SutakoNyan",
+      "username": "SutakoNyan"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 44,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/7348130.jpg?t=1619956200",
+      "score": 10,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Carrot235711",
+      "username": "Carrot235711"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/asier_dl",
+      "username": "asier_dl"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/10034266.jpg?t=1619957400",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/SnowflxkeLove",
+      "username": "SnowflxkeLove"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/kerryxx",
+      "username": "kerryxx"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 58,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/10617054.jpg?t=1619955600",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/hunneer",
+      "username": "hunneer"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": 11,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Jasontjuhhh",
+      "username": "Jasontjuhhh"
+    },
+    {
+      "date": "2021-05-02T12:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Swagalicious1111",
+      "username": "Swagalicious1111"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/ftmk25",
+      "username": "ftmk25"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Tu123mt",
+      "username": "Tu123mt"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 58,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Lailo",
+      "username": "Lailo"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734324.jpg?t=1619956200",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/asaminhe",
+      "username": "asaminhe"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/8123244.jpg?t=1619956200",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/_lady_camellia",
+      "username": "_lady_camellia"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Zayn_Nathoo",
+      "username": "Zayn_Nathoo"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/6594727.jpg?t=1619952600",
+      "score": 9,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/karorins",
+      "username": "karorins"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 5,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734391.jpg?t=1619954400",
+      "score": 7,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/jh_jh_jh",
+      "username": "jh_jh_jh"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734357.jpg?t=1619954400",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/sukunaswhore_",
+      "username": "sukunaswhore_"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 1,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12517911.jpg?t=1619952600",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/AomineXDaiki",
+      "username": "AomineXDaiki"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12004985.jpg?t=1619953800",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/FNRZ",
+      "username": "FNRZ"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12666442.jpg?t=1619958600",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Umeko26",
+      "username": "Umeko26"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12704507.jpg?t=1619952600",
+      "score": 9,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Yulianhg",
+      "username": "Yulianhg"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/pumpkinwhor3",
+      "username": "pumpkinwhor3"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 10,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Johnnydlsi",
+      "username": "Johnnydlsi"
+    },
+    {
+      "date": "2021-05-02T11:02:49+00:00",
+      "episodes_seen": 20,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/9478127.jpg?t=1619952000",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/JGnl",
+      "username": "JGnl"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Ishu_singh",
+      "username": "Ishu_singh"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "On-Hold",
+      "url": "https://myanimelist.net/profile/Winks-anime0678",
+      "username": "Winks-anime0678"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Nico46254",
+      "username": "Nico46254"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12734243.jpg?t=1619954400",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/-Kaidou-",
+      "username": "-Kaidou-"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/karoleeeekk",
+      "username": "karoleeeekk"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/RxZer-_-",
+      "username": "RxZer-_-"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/7233898.jpg?t=1619950800",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/teddy1369",
+      "username": "teddy1369"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Andeh_",
+      "username": "Andeh_"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12733962.jpg?t=1619949600",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Sizzy_",
+      "username": "Sizzy_"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": 1,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12733966.jpg?t=1619949600",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/yacocoamilk",
+      "username": "yacocoamilk"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/pinkystarfish",
+      "username": "pinkystarfish"
+    },
+    {
+      "date": "2021-05-02T10:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Drearo",
+      "username": "Drearo"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12733950.jpg?t=1619948400",
+      "score": 8,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Naruto-eatramen",
+      "username": "Naruto-eatramen"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/rhu19",
+      "username": "rhu19"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 7,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Shigaku",
+      "username": "Shigaku"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 24,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12607695.jpg?t=1619951400",
+      "score": 8,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/CONFIRM02",
+      "username": "CONFIRM02"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12691091.jpg?t=1619950800",
+      "score": 9,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/HuskyRight",
+      "username": "HuskyRight"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/FireBoyChan",
+      "username": "FireBoyChan"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12724859.jpg?t=1619959800",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/LadyJordison",
+      "username": "LadyJordison"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12733799.jpg?t=1619946000",
+      "score": 9,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Balagadoo",
+      "username": "Balagadoo"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": 9,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/EXPLOE",
+      "username": "EXPLOE"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 62,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/Japuu69",
+      "username": "Japuu69"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": 32,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Waroen1",
+      "username": "Waroen1"
+    },
+    {
+      "date": "2021-05-02T09:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "On-Hold",
+      "url": "https://myanimelist.net/profile/Hakantheanimeci",
+      "username": "Hakantheanimeci"
+    },
+    {
+      "date": "2021-05-02T08:02:49+00:00",
+      "episodes_seen": 6,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/12481219.jpg?t=1619944200",
+      "score": null,
+      "status": "Watching",
+      "url": "https://myanimelist.net/profile/Splater",
+      "username": "Splater"
+    },
+    {
+      "date": "2021-05-02T08:02:49+00:00",
+      "episodes_seen": 92,
+      "episodes_total": 62,
+      "image_url": "https://cdn.myanimelist.net/images/questionmark_50.gif",
+      "score": null,
+      "status": "Completed",
+      "url": "https://myanimelist.net/profile/IsyMorbiz",
+      "username": "IsyMorbiz"
+    },
+    {
+      "date": "2021-05-02T08:02:49+00:00",
+      "episodes_seen": null,
+      "episodes_total": null,
+      "image_url": "https://cdn.myanimelist.net/images/userimages/4801068.jpg?t=1619944800",
+      "score": null,
+      "status": "Plan to Watch",
+      "url": "https://myanimelist.net/profile/Miriachan",
+      "username": "Miriachan"
+    }
+  ]
+}

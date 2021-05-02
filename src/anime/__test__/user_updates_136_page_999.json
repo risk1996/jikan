@@ -1,0 +1,6 @@
+{
+  "error": "404 on https://myanimelist.net/anime/136/jikan/stats?show=74850",
+  "message": "Resource does not exist",
+  "status": 404,
+  "type": "BadResponseException"
+}

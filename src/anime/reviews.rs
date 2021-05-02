@@ -53,95 +53,121 @@ impl Reviews {
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    let response = client
-      .get::<Self>(&format!("/anime/{}/reviews", id))
-      .await?;
-    Ok(response.into_body())
+    Reviews::from_id_at_page(client, id, 1).await
   }
 }
 
 #[cfg(test)]
 mod tests {
+  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::{test_helper, test_helper::AnimeTestSuite};
   use super::*;
-  use rand::Rng;
-  use serial_test::serial;
+  use httpmock::MockServer;
   use std::error::Error;
-  use std::thread;
 
   #[tokio::test]
-  #[serial]
   async fn can_get_reviews_by_id() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
+    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}/reviews/{}", id, 1));
+        then
+          .status(200)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/reviews_{}_page_{}.json",
+            id, 1
+          )));
+      });
+
       let reviews = Reviews::from_id(&client, id).await;
-
-      match reviews {
-        Ok(_) => assert!(reviews.is_ok(), "{}", name),
-        Err(_) => continue,
-      }
-
-      thread::sleep(test_helper::REQUEST_DELAY);
+      mock.assert();
+      assert!(reviews.is_ok(), "{}", name);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  #[serial]
   async fn can_handle_reviews_404() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
+      let mock = server.mock(|when, then| {
+        when.path(format!("/anime/{}/reviews/{}", id, 1));
+        then
+          .status(404)
+          .body(utils_test_helper::file_to_string(&format!(
+            "src/anime/__test__/reviews_{}_page_{}.json",
+            id, 1
+          )));
+      });
+
+      let reviews = Reviews::from_id(&client, id).await;
+      mock.assert();
       assert!(
-        Reviews::from_id(&client, id).await.is_err(),
+        reviews.is_err(),
         "Response for anime \"{}\" is not 404",
         name,
       );
-
-      thread::sleep(test_helper::REQUEST_DELAY);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  #[serial]
   async fn can_get_reviews_by_id_at_page() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
-      let mut rng = rand::thread_rng();
-      let page = rng.gen_range(2..10);
-      let reviews = Reviews::from_id_at_page(&client, id, page).await;
+    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+      for page in test_helper::get_pages() {
+        let mock = server.mock(|when, then| {
+          when.path(format!("/anime/{}/reviews/{}", id, page));
+          then
+            .status(200)
+            .body(utils_test_helper::file_to_string(&format!(
+              "src/anime/__test__/reviews_{}_page_{}.json",
+              id, page
+            )));
+        });
 
-      match reviews {
-        Ok(_) => assert!(reviews.is_ok(), "{}", name),
-        Err(_) => continue,
+        let reviews = Reviews::from_id_at_page(&client, id, page).await;
+        mock.assert();
+        assert!(reviews.is_ok(), "{}", name);
       }
-
-      thread::sleep(test_helper::REQUEST_DELAY);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  #[serial]
   async fn can_handle_reviews_404_at_page() -> Result<(), Box<dyn Error>> {
-    let client = JikanHttpClient::new();
+    let server = MockServer::start();
+    let client = JikanHttpClient::new(&server.base_url());
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
-      let mut rng = rand::thread_rng();
-      let page = rng.gen_range(2..10);
-      assert!(
-        Reviews::from_id_at_page(&client, id, page).await.is_err(),
-        "Response for anime \"{}\" is not 404",
-        name,
-      );
+      for page in test_helper::get_pages() {
+        let mock = server.mock(|when, then| {
+          when.path(format!("/anime/{}/reviews/{}", id, page));
+          then
+            .status(404)
+            .body(utils_test_helper::file_to_string(&format!(
+              "src/anime/__test__/reviews_{}_page_{}.json",
+              id, page
+            )));
+        });
 
-      thread::sleep(test_helper::REQUEST_DELAY);
+        let reviews = Reviews::from_id_at_page(&client, id, page).await;
+        mock.assert();
+        assert!(
+          reviews.is_err(),
+          "Response for anime \"{}\" is not 404",
+          name,
+        );
+      }
     }
 
     Ok(())

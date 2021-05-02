@@ -1,0 +1,6 @@
+{
+  "error": "404 on https://myanimelist.net/anime/4207/jikan/userrecs",
+  "message": "Resource does not exist",
+  "status": 404,
+  "type": "BadResponseException"
+}
