@@ -1,0 +1,935 @@
+{
+  "recommendations": [
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/2/88336.jpg?s=91adfb36d2c14c84ca2bd10489cdaad8",
+      "mal_id": 34572,
+      "recommendation_count": 36,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-34572",
+      "title": "Black Clover",
+      "url": "https://myanimelist.net/anime/34572/Black_Clover"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/73245.jpg?s=f792b8c9e28534ae455d06b15e686a14",
+      "mal_id": 21,
+      "recommendation_count": 36,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-21",
+      "title": "One Piece",
+      "url": "https://myanimelist.net/anime/21/One_Piece"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/33657.jpg?s=5724d8c22ae7a1dad72d8f4229ef803f",
+      "mal_id": 11061,
+      "recommendation_count": 34,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-11061",
+      "title": "Hunter x Hunter (2011)",
+      "url": "https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/78745.jpg?s=8ea4cb2e8a861e63757d3c05aa5d32c2",
+      "mal_id": 31964,
+      "recommendation_count": 33,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-31964",
+      "title": "Boku no Hero Academia",
+      "url": "https://myanimelist.net/anime/31964/Boku_no_Hero_Academia"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/5/18179.jpg?s=24a281654f63558f3ef001950a9e6539",
+      "mal_id": 6702,
+      "recommendation_count": 31,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6702",
+      "title": "Fairy Tail",
+      "url": "https://myanimelist.net/anime/6702/Fairy_Tail"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/40451.jpg?s=3aa217eced217b3b4223af21c30fe2ed",
+      "mal_id": 269,
+      "recommendation_count": 29,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-269",
+      "title": "Bleach",
+      "url": "https://myanimelist.net/anime/269/Bleach"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/19473.jpg?s=525922d3664d9544246cf210795e7783",
+      "mal_id": 136,
+      "recommendation_count": 13,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-136",
+      "title": "Hunter x Hunter",
+      "url": "https://myanimelist.net/anime/136/Hunter_x_Hunter"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/79037.jpg?s=eeffc96234f3a9a6fd626dda64d0ae0e",
+      "mal_id": 3655,
+      "recommendation_count": 13,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-3655",
+      "title": "Nabari no Ou",
+      "url": "https://myanimelist.net/anime/3655/Nabari_no_Ou"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/7804.jpg?s=79bc552f49367091976b90b724c4eb0d",
+      "mal_id": 3588,
+      "recommendation_count": 11,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-3588",
+      "title": "Soul Eater",
+      "url": "https://myanimelist.net/anime/3588/Soul_Eater"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/80000.jpg?s=b52850d927668c7331d1d0807e20a886",
+      "mal_id": 1604,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1604",
+      "title": "Katekyo Hitman Reborn!",
+      "url": "https://myanimelist.net/anime/1604/Katekyo_Hitman_Reborn"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg?s=f5508bab9e7d610a28f12d1828a6ee79",
+      "mal_id": 40748,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-40748",
+      "title": "Jujutsu Kaisen (TV)",
+      "url": "https://myanimelist.net/anime/40748/Jujutsu_Kaisen_TV"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1887/92364.jpg?s=9710b6fb426a62c9ca2deb991f7abfb0",
+      "mal_id": 223,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-223",
+      "title": "Dragon Ball",
+      "url": "https://myanimelist.net/anime/223/Dragon_Ball"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/75195.jpg?s=c2bb5ebd6f79c4ae21272da8215d189f",
+      "mal_id": 9919,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-9919",
+      "title": "Ao no Exorcist",
+      "url": "https://myanimelist.net/anime/9919/Ao_no_Exorcist"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/20936.jpg?s=0f99859bc8ded1ec9dbd92619b831561",
+      "mal_id": 813,
+      "recommendation_count": 7,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-813",
+      "title": "Dragon Ball Z",
+      "url": "https://myanimelist.net/anime/813/Dragon_Ball_Z"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/75515.jpg?s=d4a9af608762cfbf0717515ddb226f74",
+      "mal_id": 1559,
+      "recommendation_count": 6,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1559",
+      "title": "Shijou Saikyou no Deshi Kenichi",
+      "url": "https://myanimelist.net/anime/1559/Shijou_Saikyou_no_Deshi_Kenichi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1646/113504.jpg?s=fc14aaa9ff78024d351d1e4ea80c3f8f",
+      "mal_id": 238,
+      "recommendation_count": 6,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-238",
+      "title": "Rekka no Honoo",
+      "url": "https://myanimelist.net/anime/238/Rekka_no_Honoo"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/75194.jpg?s=8fdc287c0abdce3b85f2b4aa0da94525",
+      "mal_id": 1482,
+      "recommendation_count": 5,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1482",
+      "title": "D.Gray-man",
+      "url": "https://myanimelist.net/anime/1482/DGray-man"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1228/111372.jpg?s=564b60dca1108a5de9706ee146556481",
+      "mal_id": 392,
+      "recommendation_count": 4,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-392",
+      "title": "Yuu☆Yuu☆Hakusho",
+      "url": "https://myanimelist.net/anime/392/Yuu☆Yuu☆Hakusho"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/75815.jpg?s=095ef966da07a873a75e38378080a466",
+      "mal_id": 121,
+      "recommendation_count": 4,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-121",
+      "title": "Fullmetal Alchemist",
+      "url": "https://myanimelist.net/anime/121/Fullmetal_Alchemist"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/73651.jpg?s=b257d92ac3c729e07409aac4ea66fb00",
+      "mal_id": 8086,
+      "recommendation_count": 4,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-8086",
+      "title": "Densetsu no Yuusha no Densetsu",
+      "url": "https://myanimelist.net/anime/8086/Densetsu_no_Yuusha_no_Densetsu"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/12/85221.jpg?s=bc4bd0a738a03bfe9176c5d83dc6f65e",
+      "mal_id": 33486,
+      "recommendation_count": 4,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-33486",
+      "title": "Boku no Hero Academia 2nd Season",
+      "url": "https://myanimelist.net/anime/33486/Boku_no_Hero_Academia_2nd_Season"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/28496.jpg?s=560082af5638ef1c61b4424544ce4968",
+      "mal_id": 1254,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1254",
+      "title": "Saint Seiya",
+      "url": "https://myanimelist.net/anime/1254/Saint_Seiya"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/12/86890.jpg?s=bfc7954502569ff5c4d3533dcde8230f",
+      "mal_id": 170,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-170",
+      "title": "Slam Dunk",
+      "url": "https://myanimelist.net/anime/170/Slam_Dunk"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/6793.jpg?s=168945a249f27129aa74080bb9fd89bd",
+      "mal_id": 67,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-67",
+      "title": "Basilisk: Kouga Ninpou Chou",
+      "url": "https://myanimelist.net/anime/67/Basilisk__Kouga_Ninpou_Chou"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/2/50023.jpg?s=dbe6e0fbe6c8a09748547eb87e6df5f4",
+      "mal_id": 6594,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6594",
+      "title": "Katanagatari",
+      "url": "https://myanimelist.net/anime/6594/Katanagatari"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1722/107269.jpg?s=06aa2328ff29a9401217f3b9383ccbc9",
+      "mal_id": 41353,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-41353",
+      "title": "The God of High School",
+      "url": "https://myanimelist.net/anime/41353/The_God_of_High_School"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/7/76014.jpg?s=ef5c00cb929dcd690c87f56e6d1b0c8a",
+      "mal_id": 20583,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-20583",
+      "title": "Haikyuu!!",
+      "url": "https://myanimelist.net/anime/20583/Haikyuu"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/75282.jpg?s=225fd8b06e61fe5c4cd8aa0d32f76476",
+      "mal_id": 129,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-129",
+      "title": "Gensoumaden Saiyuuki",
+      "url": "https://myanimelist.net/anime/129/Gensoumaden_Saiyuuki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg?s=e497d08bef31ae412e314b90a54acfda",
+      "mal_id": 38000,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-38000",
+      "title": "Kimetsu no Yaiba",
+      "url": "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/73834.jpg?s=23ec360714bd4c5c8e603ae6d8e6b034",
+      "mal_id": 527,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-527",
+      "title": "Pokemon",
+      "url": "https://myanimelist.net/anime/527/Pokemon"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1664/103275.jpg?s=862177f32b646985d9ad953cdee042f6",
+      "mal_id": 38671,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-38671",
+      "title": "Enen no Shouboutai",
+      "url": "https://myanimelist.net/anime/38671/Enen_no_Shouboutai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/57309.jpg?s=b0ac0decfb1be0072ad0debc45a769c1",
+      "mal_id": 21743,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-21743",
+      "title": "Donten ni Warau",
+      "url": "https://myanimelist.net/anime/21743/Donten_ni_Warau"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/14065.jpg?s=c5e499312c482d4336caef796ace2890",
+      "mal_id": 6033,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6033",
+      "title": "Dragon Ball Kai",
+      "url": "https://myanimelist.net/anime/6033/Dragon_Ball_Kai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1783/106843.jpg?s=7effdb9d0b7afd81b198daa100920c81",
+      "mal_id": 24405,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-24405",
+      "title": "World Trigger",
+      "url": "https://myanimelist.net/anime/24405/World_Trigger"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/5/54235.jpg?s=6274728d6d1b274365c964ff74619d21",
+      "mal_id": 18689,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-18689",
+      "title": "Diamond no Ace",
+      "url": "https://myanimelist.net/anime/18689/Diamond_no_Ace"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1589/95329.jpg?s=8254094634e2145d86d63438c0ab9205",
+      "mal_id": 249,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-249",
+      "title": "InuYasha",
+      "url": "https://myanimelist.net/anime/249/InuYasha"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/38383.jpg?s=e556414ecc61b69340777b7334d40bc8",
+      "mal_id": 738,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-738",
+      "title": "MÄR",
+      "url": "https://myanimelist.net/anime/738/MÄR"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/20596.jpg?s=ad0e44a6cbe5a4d2795ab7af465c9a3d",
+      "mal_id": 479,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-479",
+      "title": "Ueki no Housoku",
+      "url": "https://myanimelist.net/anime/479/Ueki_no_Housoku"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/39511.jpg?s=12263cf8a9eb492274cc9df84721c949",
+      "mal_id": 12031,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-12031",
+      "title": "Kingdom",
+      "url": "https://myanimelist.net/anime/12031/Kingdom"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/12/34443.jpg?s=9ff28fd69420f96622956e03c102ff28",
+      "mal_id": 237,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-237",
+      "title": "Koukyoushihen Eureka Seven",
+      "url": "https://myanimelist.net/anime/237/Koukyoushihen_Eureka_Seven"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f",
+      "mal_id": 5114,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-5114",
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "url": "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/22605.jpg?s=dfe3054d81745bcdd54940f94c1a2965",
+      "mal_id": 5525,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-5525",
+      "title": "07-Ghost",
+      "url": "https://myanimelist.net/anime/5525/07-Ghost"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/7/63587.jpg?s=172c5a55c7217a0e9e87ec1332f63516",
+      "mal_id": 9806,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-9806",
+      "title": "Qin Shi Ming Yue: Bai Bu Fei Jian",
+      "url": "https://myanimelist.net/anime/9806/Qin_Shi_Ming_Yue__Bai_Bu_Fei_Jian"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1983/92770.jpg?s=1df106b1549da194c40ec19857b77ef2",
+      "mal_id": 912,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-912",
+      "title": "Ninkuu",
+      "url": "https://myanimelist.net/anime/912/Ninkuu"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/44468.jpg?s=79f6b219c5904c2c8f2522b42488ff1e",
+      "mal_id": 16345,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-16345",
+      "title": "Ninkuu: Knife no Bohyou",
+      "url": "https://myanimelist.net/anime/16345/Ninkuu__Knife_no_Bohyou"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/57257.jpg?s=954861fd427ad164c69e2beb1673e1af",
+      "mal_id": 5091,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-5091",
+      "title": "Manga Sarutobi Sasuke",
+      "url": "https://myanimelist.net/anime/5091/Manga_Sarutobi_Sasuke"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/20680.jpg?s=0ded52024740a8a0e3c8fc05a0b55ae6",
+      "mal_id": 1195,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1195",
+      "title": "Zero no Tsukaima",
+      "url": "https://myanimelist.net/anime/1195/Zero_no_Tsukaima"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/60551.jpg?s=40080e5b51077174e8d293a5bfadf9ac",
+      "mal_id": 22043,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-22043",
+      "title": "Fairy Tail (2014)",
+      "url": "https://myanimelist.net/anime/22043/Fairy_Tail_2014"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/74541.jpg?s=cebeae7118a6717c2b6c0965c62934da",
+      "mal_id": 25283,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-25283",
+      "title": "Kuusen Madoushi Kouhosei no Kyoukan",
+      "url": "https://myanimelist.net/anime/25283/Kuusen_Madoushi_Kouhosei_no_Kyoukan"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/47347.jpg?s=29949c6e892df123f0b0563e836d3d98",
+      "mal_id": 16498,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-16498",
+      "title": "Shingeki no Kyojin",
+      "url": "https://myanimelist.net/anime/16498/Shingeki_no_Kyojin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/5/86739.jpg?s=0f8f6bc5b684f8b8700f935ea9c7e1b5",
+      "mal_id": 34636,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-34636",
+      "title": "Ballroom e Youkoso",
+      "url": "https://myanimelist.net/anime/34636/Ballroom_e_Youkoso"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/53477.jpg?s=f2398b1638ffc88556dca4dfca52fbf9",
+      "mal_id": 19391,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-19391",
+      "title": "Shingeki no Kyojin Picture Drama",
+      "url": "https://myanimelist.net/anime/19391/Shingeki_no_Kyojin_Picture_Drama"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1318/95345.jpg?s=12cbeeb5b4514678c3eb9ad7a0d9f16f",
+      "mal_id": 37202,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-37202",
+      "title": "Radiant",
+      "url": "https://myanimelist.net/anime/37202/Radiant"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1464/111943.jpg?s=b350450d3d98aa57f05bb4fbdb9d5209",
+      "mal_id": 18679,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-18679",
+      "title": "Kill la Kill",
+      "url": "https://myanimelist.net/anime/18679/Kill_la_Kill"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/5/63667.jpg?s=f81af386fed6885b9c9a6ad5959651da",
+      "mal_id": 23311,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-23311",
+      "title": "Garo: Honoo no Kokuin",
+      "url": "https://myanimelist.net/anime/23311/Garo__Honoo_no_Kokuin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1063/98597.jpg?s=0680fa0522ff98062c84b91caee37637",
+      "mal_id": 37806,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-37806",
+      "title": "Gunjou no Magmell",
+      "url": "https://myanimelist.net/anime/37806/Gunjou_no_Magmell"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1975/108030.jpg?s=c0e8a1dbef6b749231ad8d56f817e902",
+      "mal_id": 37403,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-37403",
+      "title": "Ahiru no Sora",
+      "url": "https://myanimelist.net/anime/37403/Ahiru_no_Sora"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/6883.jpg?s=f1ecd7a51aced2b82578e42520d112e0",
+      "mal_id": 226,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-226",
+      "title": "Elfen Lied",
+      "url": "https://myanimelist.net/anime/226/Elfen_Lied"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/72697.jpg?s=4752a62572e2172fe039d10d7163a125",
+      "mal_id": 6114,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6114",
+      "title": "Rainbow: Nisha Rokubou no Shichinin",
+      "url": "https://myanimelist.net/anime/6114/Rainbow__Nisha_Rokubou_no_Shichinin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/40409.jpg?s=eade1f76434383f5af5243cc52d50316",
+      "mal_id": 14719,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-14719",
+      "title": "JoJo no Kimyou na Bouken (TV)",
+      "url": "https://myanimelist.net/anime/14719/JoJo_no_Kimyou_na_Bouken_TV"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/65409.jpg?s=9045a2ed86abe77a6b24f0ad7f114485",
+      "mal_id": 23755,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-23755",
+      "title": "Nanatsu no Taizai",
+      "url": "https://myanimelist.net/anime/23755/Nanatsu_no_Taizai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/80551.jpg?s=859e337ac988440e23333adfcf613abf",
+      "mal_id": 33490,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-33490",
+      "title": "Kaitou Joker 4th Season",
+      "url": "https://myanimelist.net/anime/33490/Kaitou_Joker_4th_Season"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/73973.jpg?s=8ed6764b8d9194e6654444dff6572ec2",
+      "mal_id": 627,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-627",
+      "title": "Major S1",
+      "url": "https://myanimelist.net/anime/627/Major_S1"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/76493.jpg?s=73bb632d8a2e294e9df4252c6b040036",
+      "mal_id": 30296,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-30296",
+      "title": "Rakudai Kishi no Cavalry",
+      "url": "https://myanimelist.net/anime/30296/Rakudai_Kishi_no_Cavalry"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1217/103378.jpg?s=72ec284469833b7403529d43f574f5c9",
+      "mal_id": 37498,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-37498",
+      "title": "Black Fox",
+      "url": "https://myanimelist.net/anime/37498/Black_Fox"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1490/101365.jpg?s=e6e1debca19ab381a12f5b6ddf6a2cac",
+      "mal_id": 35790,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-35790",
+      "title": "Tate no Yuusha no Nariagari",
+      "url": "https://myanimelist.net/anime/35790/Tate_no_Yuusha_no_Nariagari"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1879/100467.jpg?s=fd59137a5eb37dbabe9510bde27fe4ba",
+      "mal_id": 37520,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-37520",
+      "title": "Dororo",
+      "url": "https://myanimelist.net/anime/37520/Dororo"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/12/88164.jpg?s=757aaf394373299d000a4e912796f197",
+      "mal_id": 1826,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1826",
+      "title": "Deltora Quest",
+      "url": "https://myanimelist.net/anime/1826/Deltora_Quest"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg?s=8055a0c1ad69357576fc40b690b63b03",
+      "mal_id": 30,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-30",
+      "title": "Neon Genesis Evangelion",
+      "url": "https://myanimelist.net/anime/30/Neon_Genesis_Evangelion"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.jpg?s=bb1e96eb0a0224a57aa45443eab92575",
+      "mal_id": 1,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/1-20",
+      "title": "Cowboy Bebop",
+      "url": "https://myanimelist.net/anime/1/Cowboy_Bebop"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/79331.jpg?s=ab9691beeb315f3ef1c929cef1350ab9",
+      "mal_id": 31722,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-31722",
+      "title": "Nanatsu no Taizai: Seisen no Shirushi",
+      "url": "https://myanimelist.net/anime/31722/Nanatsu_no_Taizai__Seisen_no_Shirushi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/7/74606.jpg?s=45a02b9bcc08d906381a086129f6a0f5",
+      "mal_id": 30694,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-30694",
+      "title": "Dragon Ball Super",
+      "url": "https://myanimelist.net/anime/30694/Dragon_Ball_Super"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/21834.jpg?s=8e6b13bd5e49f2cd4d2f9b7ee1ce2f8c",
+      "mal_id": 1818,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1818",
+      "title": "Claymore",
+      "url": "https://myanimelist.net/anime/1818/Claymore"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/86675.jpg?s=3a8bf2109ef76182cf63983a9eb51299",
+      "mal_id": 33726,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-33726",
+      "title": "Saiyuuki Reload Blast",
+      "url": "https://myanimelist.net/anime/33726/Saiyuuki_Reload_Blast"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/24719.jpg?s=33f5ec156680c01a422cc28eb4fe8479",
+      "mal_id": 130,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-130",
+      "title": "Saiyuuki Reload",
+      "url": "https://myanimelist.net/anime/130/Saiyuuki_Reload"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/46699.jpg?s=3c5311509533a82330510ba19e066325",
+      "mal_id": 1138,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1138",
+      "title": "Medarot",
+      "url": "https://myanimelist.net/anime/1138/Medarot"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/77408.jpg?s=652ef4139e1af11eb0c7b769282633ad",
+      "mal_id": 161,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-161",
+      "title": "Peace Maker Kurogane",
+      "url": "https://myanimelist.net/anime/161/Peace_Maker_Kurogane"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1715/105092.jpg?s=ad257e99246d9f58bdb802f227686941",
+      "mal_id": 2287,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-2287",
+      "title": "Kakutou Ryouri Densetsu Bistro Recipe",
+      "url": "https://myanimelist.net/anime/2287/Kakutou_Ryouri_Densetsu_Bistro_Recipe"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1/1378.jpg?s=f15c2e4fdd4673f003a83505e2cc5a29",
+      "mal_id": 1378,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1378",
+      "title": "Sengoku Kitan Youtouden Movie",
+      "url": "https://myanimelist.net/anime/1378/Sengoku_Kitan_Youtouden_Movie"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/4/40295.jpg?s=e72e8da024365e1c5a1cb33afacba72d",
+      "mal_id": 10015,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-10015",
+      "title": "Yu☆Gi☆Oh! Zexal",
+      "url": "https://myanimelist.net/anime/10015/Yu☆Gi☆Oh_Zexal"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/73938.jpg?s=b683715db6e9d80ca2941d48b8bb340c",
+      "mal_id": 61,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-61",
+      "title": "D.N.Angel",
+      "url": "https://myanimelist.net/anime/61/DNAngel"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1123/94526.jpg?s=6091c98cca2b5950b70cea58c9a42244",
+      "mal_id": 1484,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1484",
+      "title": "Youma",
+      "url": "https://myanimelist.net/anime/1484/Youma"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/2/20597.jpg?s=5ea8efaad1b8295835468731e2424ab2",
+      "mal_id": 2142,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-2142",
+      "title": "Blue Dragon",
+      "url": "https://myanimelist.net/anime/2142/Blue_Dragon"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1854/94704.jpg?s=2acfa202f384f3ce803d5524e1d00164",
+      "mal_id": 5231,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-5231",
+      "title": "Inazuma Eleven",
+      "url": "https://myanimelist.net/anime/5231/Inazuma_Eleven"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/13050.jpg?s=05825653ec4548310c2d5b9d9d2dc70c",
+      "mal_id": 873,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-873",
+      "title": ".hack//Roots",
+      "url": "https://myanimelist.net/anime/873/hack__Roots"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/11355.jpg?s=d7a6696fa0918b7f91c03a17d38db5ec",
+      "mal_id": 4725,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-4725",
+      "title": "Ga-Rei: Zero",
+      "url": "https://myanimelist.net/anime/4725/Ga-Rei__Zero"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/73274.jpg?s=ed42453c10ba12b03b1600d02725a174",
+      "mal_id": 918,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-918",
+      "title": "Gintama",
+      "url": "https://myanimelist.net/anime/918/Gintama"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/29466.jpg?s=a3894a3446d05a6f29e67c3649d0d2ea",
+      "mal_id": 9941,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-9941",
+      "title": "Tiger & Bunny",
+      "url": "https://myanimelist.net/anime/9941/Tiger___Bunny"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1961/92115.jpg?s=e51d88ec6699b31b8b1681fb6f388a4d",
+      "mal_id": 107,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-107",
+      "title": "Ou Dorobou Jing",
+      "url": "https://myanimelist.net/anime/107/Ou_Dorobou_Jing"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/7/75191.jpg?s=33cdf1fe8e6a720ee5ab5dd9493464d0",
+      "mal_id": 1606,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1606",
+      "title": "Kekkaishi (TV)",
+      "url": "https://myanimelist.net/anime/1606/Kekkaishi_TV"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/8/89882.jpg?s=8d07de04b5666e2b691e60aea9347193",
+      "mal_id": 168,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-168",
+      "title": "s.CRY.ed",
+      "url": "https://myanimelist.net/anime/168/sCRYed"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/26248.jpg?s=c2724412f3545fa4786c3ab73d817c9d",
+      "mal_id": 2116,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-2116",
+      "title": "Captain Tsubasa",
+      "url": "https://myanimelist.net/anime/2116/Captain_Tsubasa"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/22417.jpg?s=023f2da8c66d36b4daf717490814ae77",
+      "mal_id": 7059,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-7059",
+      "title": "Black★Rock Shooter (OVA)",
+      "url": "https://myanimelist.net/anime/7059/Black★Rock_Shooter_OVA"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/4/87702.jpg?s=89f75018690f50cd4654edc4d9a75da2",
+      "mal_id": 1137,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1137",
+      "title": "Mushrambo",
+      "url": "https://myanimelist.net/anime/1137/Mushrambo"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/47461.jpg?s=107d326a187dccb8e6dbb7086a49047f",
+      "mal_id": 589,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-589",
+      "title": "Ginga Nagareboshi Gin",
+      "url": "https://myanimelist.net/anime/589/Ginga_Nagareboshi_Gin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/56847.jpg?s=c625bee846ce0b31c2457b392d7e26ab",
+      "mal_id": 340,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-340",
+      "title": "Mutsu Enmei Ryuu Gaiden: Shura no Toki",
+      "url": "https://myanimelist.net/anime/340/Mutsu_Enmei_Ryuu_Gaiden__Shura_no_Toki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/5/30238.jpg?s=46b2444e8088905ae92732f507f0d276",
+      "mal_id": 10721,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-10721",
+      "title": "Mawaru Penguindrum",
+      "url": "https://myanimelist.net/anime/10721/Mawaru_Penguindrum"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/6441.jpg?s=d0ea8b1a20a3c10aab3626fa99e91597",
+      "mal_id": 210,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-210",
+      "title": "Ranma ½",
+      "url": "https://myanimelist.net/anime/210/Ranma_½"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1319/92084.jpg?s=35232941f9c872fd1f5af37fa389452b",
+      "mal_id": 36456,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-36456",
+      "title": "Boku no Hero Academia 3rd Season",
+      "url": "https://myanimelist.net/anime/36456/Boku_no_Hero_Academia_3rd_Season"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/11/39717.jpg?s=5908e8051487fb8468d5fca779f8f00d",
+      "mal_id": 11757,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-11757",
+      "title": "Sword Art Online",
+      "url": "https://myanimelist.net/anime/11757/Sword_Art_Online"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/4/5123.jpg?s=15bb64e0c8b13acfa5d0761308b66f59",
+      "mal_id": 2001,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-2001",
+      "title": "Tengen Toppa Gurren Lagann",
+      "url": "https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/2/63205.jpg?s=f0c08b81d747a89536341c20527e29a1",
+      "mal_id": 23385,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-23385",
+      "title": "Kyoukai no Kanata: Shinonome",
+      "url": "https://myanimelist.net/anime/23385/Kyoukai_no_Kanata__Shinonome"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/77055.jpg?s=9f334a5d9a2c45db980f7a5ff2c3a6f4",
+      "mal_id": 481,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-481",
+      "title": "Yu☆Gi☆Oh! Duel Monsters",
+      "url": "https://myanimelist.net/anime/481/Yu☆Gi☆Oh_Duel_Monsters"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/73298.jpg?s=62217062b810bd0402de3d9b4f1de22b",
+      "mal_id": 25015,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-25015",
+      "title": "Kyoukai no Kanata Movie 1: I'll Be Here - Kako-hen",
+      "url": "https://myanimelist.net/anime/25015/Kyoukai_no_Kanata_Movie_1__Ill_Be_Here_-_Kako-hen"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/85468.jpg?s=4f7cc2a1b3cae7557e6ba71097a0a2ae",
+      "mal_id": 18153,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-18153",
+      "title": "Kyoukai no Kanata",
+      "url": "https://myanimelist.net/anime/18153/Kyoukai_no_Kanata"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/26227.jpg?s=a27ae0ba0e0f966be83f41de57997f1e",
+      "mal_id": 6875,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6875",
+      "title": "Iron Man",
+      "url": "https://myanimelist.net/anime/6875/Iron_Man"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/13/21387.jpg?s=246538b2522e2a8b4fca4b747d75bba6",
+      "mal_id": 5962,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-5962",
+      "title": "Metal Fight Beyblade",
+      "url": "https://myanimelist.net/anime/5962/Metal_Fight_Beyblade"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/9/60061.jpg?s=41a4619f38eff188961b69c36a43b9b0",
+      "mal_id": 1988,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1988",
+      "title": "Himawari!!",
+      "url": "https://myanimelist.net/anime/1988/Himawari"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/2/73862.jpg?s=d976f75f480430a0c9fde4455696131d",
+      "mal_id": 457,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-457",
+      "title": "Mushishi",
+      "url": "https://myanimelist.net/anime/457/Mushishi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/68079.jpg?s=0baeb641a2ed1db41b042fc8c809fd3f",
+      "mal_id": 6772,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-6772",
+      "title": "Break Blade 1: Kakusei no Toki",
+      "url": "https://myanimelist.net/anime/6772/Break_Blade_1__Kakusei_no_Toki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/4/18990.jpg?s=71a05a756463c7f7ccb5a072074fc2a6",
+      "mal_id": 154,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-154",
+      "title": "Shaman King",
+      "url": "https://myanimelist.net/anime/154/Shaman_King"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1042/110294.jpg?s=84d27cc4aafc481fbb592fc0e2c03116",
+      "mal_id": 851,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-851",
+      "title": "Kyou kara Ore wa!!",
+      "url": "https://myanimelist.net/anime/851/Kyou_kara_Ore_wa"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/51107.jpg?s=277f33627dad8f3f349c2ac234138ca6",
+      "mal_id": 18507,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-18507",
+      "title": "Free!",
+      "url": "https://myanimelist.net/anime/18507/Free"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/1702/106229.jpg?s=cec5f6939fd1f0843aaa9aa877c26566",
+      "mal_id": 40221,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-40221",
+      "title": "Kami no Tou",
+      "url": "https://myanimelist.net/anime/40221/Kami_no_Tou"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/3/15874.jpg?s=65cd3f33aa07c073425eef540829758e",
+      "mal_id": 1292,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-1292",
+      "title": "Afro Samurai",
+      "url": "https://myanimelist.net/anime/1292/Afro_Samurai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/anime/6/20873.jpg?s=e4faf179b83f881a60b10fc136892d37",
+      "mal_id": 482,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/anime/20-482",
+      "title": "Yu☆Gi☆Oh!: Duel Monsters GX",
+      "url": "https://myanimelist.net/anime/482/Yu☆Gi☆Oh__Duel_Monsters_GX"
+    }
+  ],
+  "request_cache_expiry": 59270,
+  "request_cached": true,
+  "request_hash": "request:anime:915e87b7f0be447a702c09cbee7f3166d686a015"
+}

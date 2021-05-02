@@ -1,0 +1,63 @@
+{
+  "pictures": [
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/1/20l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/1/20.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/7/4289l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/7/4289.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/7/4641l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/7/4641.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/4/4644l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/4/4644.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/13/17405l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/13/17405.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/6/23162l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/6/23162.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/1359/111463l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/1359/111463.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/1/20l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/1/20.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/7/4289l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/7/4289.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/7/4641l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/7/4641.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/4/4644l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/4/4644.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/13/17405l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/13/17405.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/6/23162l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/6/23162.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/anime/1359/111463l.jpg",
+      "small": "https://cdn.myanimelist.net/images/anime/1359/111463.jpg"
+    }
+  ],
+  "request_cache_expiry": 59718,
+  "request_cached": true,
+  "request_hash": "request:anime:7d3a1e7f31723b31015f45e97d0a7132e4a25c06"
+}

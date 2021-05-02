@@ -2,43 +2,61 @@ use super::super::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
+use std::cmp::PartialEq;
 use std::error::Error;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Episode {
-  #[serde(rename = "aired")]
-  aired_at: DateTime<FixedOffset>,
-  #[serde(rename = "episode_id")]
-  id: u32,
-  filler: bool,
-  forum_url: Option<String>,
-  recap: bool,
-  title: String,
-  title_japanese: Option<String>,
-  title_romanji: Option<String>,
-  video_url: Option<String>,
+pub struct Scores {
+  animation: u8,
+  character: u8,
+  enjoyment: u8,
+  overall: u8,
+  sound: u8,
+  story: u8,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Episodes {
-  episodes: Vec<Episode>,
-  episodes_last_page: u32,
+pub struct Reviewer {
+  episodes_seen: u32,
+  image_url: String,
+  scores: Scores,
+  url: String,
+  username: String,
 }
 
-impl Episodes {
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct Review {
+  content: String,
+  date: DateTime<FixedOffset>,
+  helpful_count: u32,
+  #[serde(rename = "mal_id")]
+  id: u32,
+  reviewer: Reviewer,
+  url: String,
+}
+
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct Reviews {
+  reviews: Vec<Review>,
+}
+
+impl Reviews {
   pub async fn from_id_at_page(
     client: &JikanHttpClient,
     id: u32,
     page: u32,
   ) -> Result<Self, Box<dyn Error>> {
     let response = client
-      .get::<Self>(&format!("/anime/{}/episodes/{}", id, page))
+      .get::<Self>(&format!("/anime/{}/reviews/{}", id, page))
       .await?;
     Ok(response.into_body())
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    Episodes::from_id_at_page(client, id, 1).await
+    let response = client
+      .get::<Self>(&format!("/anime/{}/reviews", id))
+      .await?;
+    Ok(response.into_body())
   }
 }
 
@@ -53,14 +71,14 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_get_episodes_by_id() -> Result<(), Box<dyn Error>> {
+  async fn can_get_reviews_by_id() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
-      let episodes = Episodes::from_id(&client, id).await;
+      let reviews = Reviews::from_id(&client, id).await;
 
-      match episodes {
-        Ok(_) => assert!(episodes.is_ok(), "{}", name),
+      match reviews {
+        Ok(_) => assert!(reviews.is_ok(), "{}", name),
         Err(_) => continue,
       }
 
@@ -72,14 +90,13 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_handle_episodes_empty_episodes() -> Result<(), Box<dyn Error>> {
+  async fn can_handle_reviews_404() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
-      assert_eq!(
-        Episodes::from_id(&client, id).await?.episodes.len(),
-        0,
-        "Episodes for anime \"{}\" is not 0",
+      assert!(
+        Reviews::from_id(&client, id).await.is_err(),
+        "Response for anime \"{}\" is not 404",
         name,
       );
 
@@ -91,16 +108,16 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_get_episodes_by_id_at_page() -> Result<(), Box<dyn Error>> {
+  async fn can_get_reviews_by_id_at_page() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes(10) {
       let mut rng = rand::thread_rng();
       let page = rng.gen_range(2..10);
-      let episodes = Episodes::from_id_at_page(&client, id, page).await;
+      let reviews = Reviews::from_id_at_page(&client, id, page).await;
 
-      match episodes {
-        Ok(_) => assert!(episodes.is_ok(), "{}", name),
+      match reviews {
+        Ok(_) => assert!(reviews.is_ok(), "{}", name),
         Err(_) => continue,
       }
 
@@ -112,19 +129,15 @@ mod tests {
 
   #[tokio::test]
   #[serial]
-  async fn can_handle_empty_episodes_at_page() -> Result<(), Box<dyn Error>> {
+  async fn can_handle_reviews_404_at_page() -> Result<(), Box<dyn Error>> {
     let client = JikanHttpClient::new();
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
       let mut rng = rand::thread_rng();
       let page = rng.gen_range(2..10);
-      assert_eq!(
-        Episodes::from_id_at_page(&client, id, page)
-          .await?
-          .episodes
-          .len(),
-        0,
-        "Episodes for anime \"{}\" is not 0",
+      assert!(
+        Reviews::from_id_at_page(&client, id, page).await.is_err(),
+        "Response for anime \"{}\" is not 404",
         name,
       );
 
