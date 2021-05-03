@@ -26,13 +26,17 @@ pub struct Episodes {
 }
 
 impl Episodes {
+  pub fn get_url_path(id: u32, page: u32) -> String {
+    format!("/anime/{}/episodes/{}", id, page)
+  }
+
   pub async fn from_id_at_page(
     client: &JikanHttpClient,
     id: u32,
     page: u32,
   ) -> Result<Self, Box<dyn Error>> {
     let response = client
-      .get::<Self>(&format!("/anime/{}/episodes/{}", id, page))
+      .get::<Self>(&Episodes::get_url_path(id, page))
       .await?;
     Ok(response.into_body())
   }
@@ -54,15 +58,16 @@ mod tests {
   async fn can_get_episodes_by_id() -> Result<(), Box<dyn Error>> {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
+    let page = 1;
 
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
       let mock = server.mock(|when, then| {
-        when.path(format!("/anime/{}/episodes/{}", id, 1));
+        when.path(Episodes::get_url_path(id, page));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
             "src/anime/__test__/episodes_{}_page_{}.json",
-            id, 1
+            id, page
           )));
       });
 
@@ -78,15 +83,16 @@ mod tests {
   async fn can_handle_episodes_empty_episodes() -> Result<(), Box<dyn Error>> {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
+    let page = 1;
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
       let mock = server.mock(|when, then| {
-        when.path(format!("/anime/{}/episodes/{}", id, 1));
+        when.path(Episodes::get_url_path(id, page));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
             "src/anime/__test__/episodes_{}_page_{}.json",
-            id, 1
+            id, page
           )));
       });
 
@@ -111,7 +117,7 @@ mod tests {
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
       for page in test_helper::get_pages() {
         let mock = server.mock(|when, then| {
-          when.path(format!("/anime/{}/episodes/{}", id, page));
+          when.path(Episodes::get_url_path(id, page));
           then
             .status(200)
             .body(utils_test_helper::file_to_string(&format!(
@@ -137,7 +143,7 @@ mod tests {
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
       for page in test_helper::get_pages() {
         let mock = server.mock(|when, then| {
-          when.path(format!("/anime/{}/episodes/{}", id, page));
+          when.path(Episodes::get_url_path(id, page));
           then
             .status(200)
             .body(utils_test_helper::file_to_string(&format!(

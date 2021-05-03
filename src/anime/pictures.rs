@@ -16,10 +16,12 @@ pub struct Pictures {
 }
 
 impl Pictures {
+  pub fn get_url_path(id: u32) -> String {
+    format!("/anime/{}/pictures", id)
+  }
+
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
-    let response = client
-      .get::<Self>(&format!("/anime/{}/pictures", id))
-      .await?;
+    let response = client.get::<Self>(&Pictures::get_url_path(id)).await?;
     Ok(response.into_body())
   }
 }
@@ -39,7 +41,7 @@ mod tests {
 
     for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
       let mock = server.mock(|when, then| {
-        when.path(format!("/anime/{}/pictures", id));
+        when.path(Pictures::get_url_path(id));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
@@ -63,7 +65,7 @@ mod tests {
 
     for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
       let mock = server.mock(|when, then| {
-        when.path(format!("/anime/{}/pictures", id));
+        when.path(Pictures::get_url_path(id));
         then
           .status(404)
           .body(utils_test_helper::file_to_string(&format!(
