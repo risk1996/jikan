@@ -6,10 +6,10 @@ use thiserror::Error;
 pub enum JikanError {
   #[error("invalid uri")]
   InvalidUri(#[from] InvalidUri),
-
   #[error("http error")]
   HttpError(#[from] HttpError),
-
   #[error("serialization/deserialization error")]
   SerializationDeserializationError(#[from] SerdeError),
+  #[error("unknown error")]
+  Fail,
 }
