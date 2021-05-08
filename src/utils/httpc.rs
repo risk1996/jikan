@@ -1,8 +1,8 @@
 extern crate hyper;
+use super::super::common::error::JikanError;
 use hyper::{body, client::HttpConnector, Body, Client, Response, Uri};
 use hyper_tls::HttpsConnector;
 use serde::Deserialize;
-use std::error::Error;
 
 static BASE_URL: &'static str = "https://api.jikan.moe/v3";
 
@@ -24,7 +24,7 @@ impl JikanHttpClient {
     JikanHttpClient::new(BASE_URL)
   }
 
-  pub async fn get<T>(&self, path: &str) -> Result<Response<T>, Box<dyn Error>>
+  pub async fn get<T>(&self, path: &str) -> Result<Response<T>, JikanError>
   where
     for<'de> T: Deserialize<'de>,
   {
@@ -47,6 +47,7 @@ mod tests {
   use httpmock::Method::GET;
   use httpmock::MockServer;
   use serde::{Deserialize, Serialize};
+  use std::error::Error;
 
   #[derive(Deserialize, Getters, Serialize)]
   struct About {

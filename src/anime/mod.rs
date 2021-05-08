@@ -1,18 +1,3 @@
-pub use self::characters_staff::{CharactersStaff, *};
-pub use self::episodes::{Episodes, *};
-pub use self::forum::{Forum, *};
-pub use self::info::{Info, *};
-pub use self::more_info::MoreInfo;
-pub use self::news::{News, *};
-pub use self::pictures::{Pictures, *};
-pub use self::recommendations::{Recommendations, *};
-pub use self::reviews::{Reviews, *};
-pub use self::stats::{Stats, *};
-pub use self::user_updates::{UserUpdates, *};
-pub use self::videos::{Videos, *};
-use super::utils::httpc::JikanHttpClient;
-use std::error::Error;
-
 mod characters_staff;
 mod episodes;
 mod forum;
@@ -26,6 +11,22 @@ mod stats;
 mod user_updates;
 mod videos;
 
+pub use self::characters_staff::{CharactersStaff, *};
+pub use self::episodes::{Episodes, *};
+pub use self::forum::{Forum, *};
+pub use self::info::{Info, *};
+pub use self::more_info::MoreInfo;
+pub use self::news::{News, *};
+pub use self::pictures::{Pictures, *};
+pub use self::recommendations::{Recommendations, *};
+pub use self::reviews::{Reviews, *};
+pub use self::stats::{Stats, *};
+pub use self::user_updates::{UserUpdates, *};
+pub use self::videos::{Videos, *};
+use super::common::error::JikanError;
+use super::utils::httpc::JikanHttpClient;
+
+#[cfg(test)]
 mod test_helper;
 
 pub struct Anime {
@@ -36,19 +37,24 @@ pub struct Anime {
 /// Used to get data under `/anime` from `jikan.moe`'s API
 /// Read more here: https://jikan.docs.apiary.io/#reference/0/anime
 impl Anime {
+  fn create(client: JikanHttpClient, id: u32) -> Self {
+    Anime { client, id }
+  }
+
   /// Creates a `jikan::anime::Anime` instance.
   ///
   /// # Example
   /// ```
   /// use jikan::anime::Anime;
   ///
-  /// fn main() {
-  ///   let anime = Anime::new(20);
+  /// fn get_naruto() -> Anime {
+  ///   // Instantiate "Naruto" anime
+  ///   Anime::new(20)
   /// }
   /// ```
   pub fn new(id: u32) -> Self {
     let client = JikanHttpClient::default();
-    Anime { client, id }
+    Anime::create(client, id)
   }
 
   /// Gets anime information.
@@ -58,71 +64,71 @@ impl Anime {
   /// # Example
   /// ```
   /// use jikan::anime::{AiringStatus, Info, Anime};
+  /// # use std::error::Error;
   ///
-  /// async fn get_naruto() -> Info {
-  ///   let anime = Anime::new(20);
-  ///   let naruto = anime.info().await.unwrap();
-  ///
-  ///   naruto
-  /// }
+  /// # fn get_naruto() -> Anime {
+  /// #   Anime::new(20)
+  /// # }
   ///
   /// #[tokio::main]
-  /// async fn main() {
-  ///   let naruto = get_naruto().await;
-  ///   assert_eq!(naruto.id(), &20u32);
-  ///   assert_eq!(naruto.title(), "Naruto");
-  ///   assert_eq!(naruto.is_airing(), &false);
+  /// async fn main() -> Result<(), Box<dyn Error>> {
+  ///   // See Anime::new(...)
+  ///   let naruto_info = get_naruto().info().await?;
+  ///   assert_eq!(naruto_info.id(), &20u32);
+  ///   assert_eq!(naruto_info.title(), "Naruto");
+  ///   assert_eq!(naruto_info.is_airing(), &false);
   ///   assert_eq!(
-  ///     naruto.airing_status(),
+  ///     naruto_info.airing_status(),
   ///     &AiringStatus::FinishedAiring,
   ///   );
+  ///   Ok(())
   /// }
   /// ```
-  pub async fn info(&self) -> Result<Info, Box<dyn Error>> {
+  pub async fn info(&self) -> Result<Info, JikanError> {
     Info::from_id(&self.client, self.id).await
   }
 
-  pub async fn characters_staff(&self) -> Result<CharactersStaff, Box<dyn Error>> {
+  pub async fn characters_staff(&self) -> Result<CharactersStaff, JikanError> {
     CharactersStaff::from_id(&self.client, self.id).await
   }
 
-  pub async fn episodes_at_page(&self, page: u32) -> Result<Episodes, Box<dyn Error>> {
+  pub async fn episodes_at_page(&self, page: u32) -> Result<Episodes, JikanError> {
     Episodes::from_id_at_page(&self.client, self.id, page).await
   }
 
-  pub async fn news(&self) -> Result<News, Box<dyn Error>> {
+  pub async fn news(&self) -> Result<News, JikanError> {
     News::from_id(&self.client, self.id).await
   }
 
-  pub async fn pictures(&self) -> Result<Pictures, Box<dyn Error>> {
+  pub async fn pictures(&self) -> Result<Pictures, JikanError> {
     Pictures::from_id(&self.client, self.id).await
   }
 
-  pub async fn videos(&self) -> Result<Videos, Box<dyn Error>> {
+  pub async fn videos(&self) -> Result<Videos, JikanError> {
     Videos::from_id(&self.client, self.id).await
   }
 
-  pub async fn stats(&self) -> Result<Stats, Box<dyn Error>> {
+  pub async fn stats(&self) -> Result<Stats, JikanError> {
     Stats::from_id(&self.client, self.id).await
   }
 
-  pub async fn forum(&self) -> Result<Forum, Box<dyn Error>> {
+  pub async fn forum(&self) -> Result<Forum, JikanError> {
     Forum::from_id(&self.client, self.id).await
   }
 
-  pub async fn more_info(&self) -> Result<MoreInfo, Box<dyn Error>> {
+  pub async fn more_info(&self) -> Result<MoreInfo, JikanError> {
     MoreInfo::from_id(&self.client, self.id).await
   }
 
-  pub async fn reviews(&self, page: u32) -> Result<Reviews, Box<dyn Error>> {
+  pub async fn reviews_at_page(&self, page: u32) -> Result<Reviews, JikanError> {
     Reviews::from_id_at_page(&self.client, self.id, page).await
   }
 
-  pub async fn recommendations(&self) -> Result<Recommendations, Box<dyn Error>> {
+  pub async fn recommendations(&self) -> Result<Recommendations, JikanError> {
     Recommendations::from_id(&self.client, self.id).await
   }
 
-  pub async fn user_updates(&self, page: u32) -> Result<UserUpdates, Box<dyn Error>> {
+  pub async fn user_updates_at_page(&self, page: u32) -> Result<UserUpdates, JikanError> {
     UserUpdates::from_id_at_page(&self.client, self.id, page).await
   }
 }

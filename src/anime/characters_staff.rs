@@ -1,8 +1,8 @@
+use super::super::common::error::JikanError;
 use super::super::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
-use std::error::Error;
 
 #[derive(Debug, Deserialize, PartialEq, Serialize)]
 pub enum VoiceActorLanguage {
@@ -136,10 +136,7 @@ impl CharactersStaff {
     format!("/anime/{}/characters_staff", id)
   }
 
-  pub async fn from_id(
-    client: &JikanHttpClient,
-    id: u32,
-  ) -> Result<CharactersStaff, Box<dyn Error>> {
+  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<CharactersStaff, JikanError> {
     let response = client
       .get::<Self>(&CharactersStaff::get_url_path(id))
       .await?;

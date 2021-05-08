@@ -1,8 +1,8 @@
+use super::super::common::error::JikanError;
 use super::super::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
-use std::error::Error;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Episode {
@@ -34,14 +34,14 @@ impl Episodes {
     client: &JikanHttpClient,
     id: u32,
     page: u32,
-  ) -> Result<Self, Box<dyn Error>> {
+  ) -> Result<Self, JikanError> {
     let response = client
       .get::<Self>(&Episodes::get_url_path(id, page))
       .await?;
     Ok(response.into_body())
   }
 
-  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
+  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
     Episodes::from_id_at_page(client, id, 1).await
   }
 }

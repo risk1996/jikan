@@ -1,9 +1,9 @@
+use super::super::common::error::JikanError;
 use super::super::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
-use std::error::Error;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Scores {
@@ -49,12 +49,12 @@ impl Reviews {
     client: &JikanHttpClient,
     id: u32,
     page: u32,
-  ) -> Result<Self, Box<dyn Error>> {
+  ) -> Result<Self, JikanError> {
     let response = client.get::<Self>(&Reviews::get_url_path(id, page)).await?;
     Ok(response.into_body())
   }
 
-  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
+  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
     Reviews::from_id_at_page(client, id, 1).await
   }
 }

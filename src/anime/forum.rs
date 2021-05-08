@@ -1,9 +1,9 @@
+use super::super::common::error::JikanError;
 use super::super::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
-use std::error::Error;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Post {
@@ -38,7 +38,7 @@ impl Forum {
     format!("/anime/{}/forum", id)
   }
 
-  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, Box<dyn Error>> {
+  pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
     let response = client.get::<Self>(&Forum::get_url_path(id)).await?;
     Ok(response.into_body())
   }
