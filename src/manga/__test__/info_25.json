@@ -1,0 +1,134 @@
+{
+  "authors": [
+    {
+      "mal_id": 1874,
+      "name": "Arakawa, Hiromu",
+      "type": "people",
+      "url": "https://myanimelist.net/people/1874/Hiromu_Arakawa"
+    }
+  ],
+  "background": "Hagane no Renkinjutsushi won the 49th Shogakukan Manga Award for the shounen demographic in 2004. Hiromu Arakawa also won the 15th Tezuka Osamu Cultural Prize in the New Artist Prize category for the series in 2011. As of 2015, over 64 million copies of the series have been sold worldwide, making it one of Square Enix's most successful publications, according to Nielsen Bookscan. A live-action film is in development by Warner Bros. Japan and is scheduled for release in Winter 2017.\r\n\r\nThe series was published in English as Fullmetal Alchemist by VIZ Media from May 3, 2005 to December 20, 2011, and in eBook format by Yen Press on April 15, 2014. A 3-in-1 omnibus edition was released by VIZ from June 7, 2011 to November 11, 2014 as well as a complete box set in November 1, 2011 (which included the novel Fullmetal Alchemist: The Ties That Bind). The manga was also published in Italian by Panini Comics under the Planet Manga imprint from July 13, 2006 to September 3, 2011, in Polish by J.P. Fantastica from January 2006 to to April 2012, in Brazilian Portuguese by Jbc from February 2007 to April 2011 and in Spanish by Ivrea Argentina starting December 12, 2016.",
+  "chapters": 116,
+  "favorites": 26212,
+  "genres": [
+    {
+      "mal_id": 1,
+      "name": "Action",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/1/Action"
+    },
+    {
+      "mal_id": 2,
+      "name": "Adventure",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/2/Adventure"
+    },
+    {
+      "mal_id": 4,
+      "name": "Comedy",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/4/Comedy"
+    },
+    {
+      "mal_id": 8,
+      "name": "Drama",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/8/Drama"
+    },
+    {
+      "mal_id": 27,
+      "name": "Shounen",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/27/Shounen"
+    },
+    {
+      "mal_id": 38,
+      "name": "Military",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/genre/38/Military"
+    }
+  ],
+  "image_url": "https://cdn.myanimelist.net/images/manga/3/243675.jpg",
+  "mal_id": 25,
+  "members": 229140,
+  "popularity": 13,
+  "published": {
+    "from": "2001-07-12T00:00:00+00:00",
+    "prop": {
+      "from": {
+        "day": 12,
+        "month": 7,
+        "year": 2001
+      },
+      "to": {
+        "day": 11,
+        "month": 9,
+        "year": 2010
+      }
+    },
+    "string": "Jul  12, 2001 to Sep  11, 2010",
+    "to": "2010-09-11T00:00:00+00:00"
+  },
+  "publishing": false,
+  "rank": 6,
+  "related": {
+    "Adaptation": [
+      {
+        "mal_id": 121,
+        "name": "Fullmetal Alchemist",
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/121/Fullmetal_Alchemist"
+      },
+      {
+        "mal_id": 5114,
+        "name": "Fullmetal Alchemist: Brotherhood",
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"
+      }
+    ],
+    "Alternative version": [
+      {
+        "mal_id": 32409,
+        "name": "Full Metal Alchemist: Prototype",
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/32409/Full_Metal_Alchemist__Prototype"
+      }
+    ],
+    "Side story": [
+      {
+        "mal_id": 4658,
+        "name": "Fullmetal Alchemist",
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/4658/Fullmetal_Alchemist"
+      }
+    ]
+  },
+  "request_cache_expiry": 8270,
+  "request_cached": true,
+  "request_hash": "request:manga:c277accf70c490102064350cfc8b7fc318716029",
+  "score": 9.08,
+  "scored_by": 126803,
+  "serializations": [
+    {
+      "mal_id": 13,
+      "name": "Shounen Gangan",
+      "type": "manga",
+      "url": "https://myanimelist.net/manga/magazine/13/Shounen_Gangan"
+    }
+  ],
+  "status": "Finished",
+  "synopsis": "Alchemists are knowledgeable and naturally talented individuals who can manipulate and modify matter due to their art. Yet despite the wide range of possibilities, alchemy is not as all-powerful as most would believe. Human transmutation is strictly forbidden, and whoever attempts it risks severe consequences. Even so, siblings Edward and Alphonse Elric decide to ignore this great taboo and bring their mother back to life. Unfortunately, not only do they fail in resurrecting her, they also pay an extremely high price for their arrogance: Edward loses his left leg and Alphonse his entire body. Furthermore, Edward also gives up his right arm in order to seal his brother's soul into a suit of armor. Years later, the young alchemists travel across the country looking for the Philosopher's Stone, in the hopes of recovering their old bodies with its power. However, their quest for the fated stone also leads them to unravel far darker secrets than they could ever imagine. [Written by MAL Rewrite]",
+  "title": "Fullmetal Alchemist",
+  "title_english": "Fullmetal Alchemist",
+  "title_japanese": "鋼の錬金術師",
+  "title_synonyms": [
+    "Full Metal Alchemist",
+    "Hagane no Renkinjutsushi",
+    "FMA",
+    "HagaRen",
+    "Fullmetal Alchemist Gaiden"
+  ],
+  "type": "Manga",
+  "url": "https://myanimelist.net/manga/25/Fullmetal_Alchemist",
+  "volumes": 27
+}

@@ -24,7 +24,7 @@ impl MoreInfo {
 #[cfg(test)]
 mod tests {
   use super::super::super::utils::test_helper as utils_test_helper;
-  use super::super::{test_helper, test_helper::AnimeTestSuite};
+  use super::super::test_helper::{self, AnimeTestSuite};
   use super::*;
   use httpmock::MockServer;
   use std::error::Error;

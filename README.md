@@ -14,6 +14,7 @@ Rust wrapper for [Jikan](https://jikan.moe) (unofficial MyAnimeList REST API).
 ## TODO
 
 - Mock doc test
+- Make non-2xx HTTP response status code an error
 - Complete `manga` feature
 - Complete `person` feature
 - Complete `character` feature
