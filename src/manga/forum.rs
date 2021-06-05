@@ -12,7 +12,7 @@ pub struct Forum {
 
 impl Forum {
   pub fn get_url_path(id: u32) -> String {
-    format!("/anime/{}/forum", id)
+    format!("/manga/{}/forum", id)
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
@@ -24,7 +24,7 @@ impl Forum {
 #[cfg(test)]
 mod tests {
   use super::super::super::utils::test_helper as utils_test_helper;
-  use super::super::test_helper::{self, AnimeTestSuite};
+  use super::super::test_helper::{self, MangaTestSuite};
   use super::*;
   use httpmock::MockServer;
   use std::error::Error;
@@ -34,13 +34,13 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_valid_mangas() {
       let mock = server.mock(|when, then| {
         when.path(Forum::get_url_path(id));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/forum_{}.json",
+            "src/manga/__test__/forum_{}.json",
             id
           )));
       });
@@ -58,20 +58,20 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_invalid_mangas() {
       let mock = server.mock(|when, then| {
         when.path(Forum::get_url_path(id));
         then
           .status(404)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/forum_{}.json",
+            "src/manga/__test__/forum_{}.json",
             id
           )));
       });
 
       let forum = Forum::from_id(&client, id).await;
       mock.assert();
-      assert!(forum.is_err(), "Response for anime \"{}\" is not 404", name,);
+      assert!(forum.is_err(), "Response for manga \"{}\" is not 404", name,);
     }
 
     Ok(())

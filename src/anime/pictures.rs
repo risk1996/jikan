@@ -1,14 +1,9 @@
 use super::super::common::error::JikanError;
+use super::super::common::pictures::Picture;
 use super::super::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
-
-#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Picture {
-  large: String,
-  small: String,
-}
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Pictures {

@@ -1,0 +1,119 @@
+{
+  "pictures": [
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/55539l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/55539.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55543l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55543.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55545l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55545.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55551l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55551.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/55553l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/55553.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/59409l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/59409.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/88931l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/88931.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/156515l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/156515.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/174711l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/174711.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/192143l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/192143.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/192144l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/192144.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/5/192145l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/5/192145.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/193157l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/193157.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/203012l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/203012.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/55539l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/55539.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55543l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55543.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55545l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55545.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/55551l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/55551.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/55553l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/55553.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/59409l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/59409.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/88931l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/88931.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/2/156515l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/2/156515.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/174711l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/174711.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/192143l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/192143.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/1/192144l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/1/192144.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/5/192145l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/5/192145.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/193157l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/193157.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/manga/3/203012l.jpg",
+      "small": "https://cdn.myanimelist.net/images/manga/3/203012.jpg"
+    }
+  ],
+  "request_cache_expiry": 86400,
+  "request_cached": true,
+  "request_hash": "request:manga:2057138b69e5f40c17bd33e4dd37efbe71a10397"
+}

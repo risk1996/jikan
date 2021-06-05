@@ -1,34 +1,39 @@
 use super::super::common::error::JikanError;
-use super::super::common::stats::Scores;
 use super::super::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
 
-#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct ListStats {
-  completed: u32,
-  dropped: u32,
-  on_hold: u32,
-  plan_to_watch: u32,
-  total: u32,
-  watching: u32,
+#[derive(Debug, Deserialize, PartialEq, Serialize)]
+pub enum CharacterRole {
+  Main,
+  Supporting,
+  #[serde(other)]
+  Unknown,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Stats {
-  #[serde(flatten)]
-  list_stats: ListStats,
-  scores: Scores,
+pub struct Character {
+  #[serde(rename = "mal_id")]
+  id: u32,
+  image_url: String,
+  name: String,
+  role: CharacterRole,
+  url: String,
 }
 
-impl Stats {
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct Characters {
+  characters: Vec<Character>,
+}
+
+impl Characters {
   pub fn get_url_path(id: u32) -> String {
-    format!("/anime/{}/stats", id)
+    format!("/manga/{}/characters", id)
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
-    let response = client.get::<Self>(&Stats::get_url_path(id)).await?;
+    let response = client.get::<Self>(&Characters::get_url_path(id)).await?;
     Ok(response.into_body())
   }
 }
@@ -36,54 +41,54 @@ impl Stats {
 #[cfg(test)]
 mod tests {
   use super::super::super::utils::test_helper as utils_test_helper;
-  use super::super::test_helper::{self, AnimeTestSuite};
+  use super::super::test_helper::{self, MangaTestSuite};
   use super::*;
   use httpmock::MockServer;
   use std::error::Error;
 
   #[tokio::test]
-  async fn can_get_stats_by_id() -> Result<(), Box<dyn Error>> {
+  async fn can_get_characters_by_id() -> Result<(), Box<dyn Error>> {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_valid_mangas() {
       let mock = server.mock(|when, then| {
-        when.path(Stats::get_url_path(id));
+        when.path(Characters::get_url_path(id));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/stats_{}.json",
+            "src/manga/__test__/characters_{}.json",
             id
           )));
       });
 
-      let stats = Stats::from_id(&client, id).await;
+      let characters = Characters::from_id(&client, id).await;
       mock.assert();
-      assert!(stats.is_ok(), "{}", name);
+      assert!(characters.is_ok(), "{}", name);
     }
 
     Ok(())
   }
 
   #[tokio::test]
-  async fn can_handle_stats_404() -> Result<(), Box<dyn Error>> {
+  async fn can_handle_characters_404() -> Result<(), Box<dyn Error>> {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_invalid_mangas() {
       let mock = server.mock(|when, then| {
-        when.path(Stats::get_url_path(id));
+        when.path(Characters::get_url_path(id));
         then
           .status(404)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/stats_{}.json",
+            "src/manga/__test__/characters_{}.json",
             id
           )));
       });
 
-      let stats = Stats::from_id(&client, id).await;
+      let info = Characters::from_id(&client, id).await;
       mock.assert();
-      assert!(stats.is_err(), "Response for anime \"{}\" is not 404", name,);
+      assert!(info.is_err(), "Response for manga \"{}\" is not 404", name);
     }
 
     Ok(())

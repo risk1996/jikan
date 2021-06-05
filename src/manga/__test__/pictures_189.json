@@ -1,0 +1,6 @@
+{
+  "error": "404 on https://myanimelist.net/manga/189/jikan/pics",
+  "message": "Resource does not exist",
+  "status": 404,
+  "type": "BadResponseException"
+}

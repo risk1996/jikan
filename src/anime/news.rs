@@ -1,27 +1,13 @@
 use super::super::common::error::JikanError;
+use super::super::common::news::NewsArticle;
 use super::super::utils::httpc::JikanHttpClient;
-use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct Article {
-  author_name: String,
-  author_url: String,
-  comments: u32,
-  #[serde(rename = "date")]
-  created_at: DateTime<FixedOffset>,
-  forum_url: String,
-  image_url: Option<String>,
-  intro: String,
-  title: String,
-  url: String,
-}
-
-#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct News {
-  articles: Vec<Article>,
+  articles: Vec<NewsArticle>,
 }
 
 impl News {

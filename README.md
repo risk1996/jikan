@@ -13,8 +13,11 @@ Rust wrapper for [Jikan](https://jikan.moe) (unofficial MyAnimeList REST API).
 
 ## TODO
 
+- Add `Eq` trait on all structs and enums
+- Add request metadata
 - Mock doc test
 - Make non-2xx HTTP response status code an error
+- Add badges to README
 - Complete `manga` feature
 - Complete `person` feature
 - Complete `character` feature

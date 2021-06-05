@@ -1,0 +1,53 @@
+{
+  "completed": 126948,
+  "dropped": 5153,
+  "on_hold": 13758,
+  "plan_to_read": 44063,
+  "reading": 39492,
+  "request_cache_expiry": 86400,
+  "request_cached": false,
+  "request_hash": "request:manga:2478d2accdb2f05fce0d4c20334ea41c85666bd0",
+  "scores": {
+    "1": {
+      "percentage": 1.1,
+      "votes": 1434
+    },
+    "2": {
+      "percentage": 0.1,
+      "votes": 116
+    },
+    "3": {
+      "percentage": 0.1,
+      "votes": 99
+    },
+    "4": {
+      "percentage": 0.2,
+      "votes": 208
+    },
+    "5": {
+      "percentage": 0.6,
+      "votes": 699
+    },
+    "6": {
+      "percentage": 1.5,
+      "votes": 1880
+    },
+    "7": {
+      "percentage": 5.5,
+      "votes": 7002
+    },
+    "8": {
+      "percentage": 15.1,
+      "votes": 19127
+    },
+    "9": {
+      "percentage": 29.1,
+      "votes": 36891
+    },
+    "10": {
+      "percentage": 46.9,
+      "votes": 59485
+    }
+  },
+  "total": 229414
+}
