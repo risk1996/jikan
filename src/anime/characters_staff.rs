@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
@@ -128,6 +129,8 @@ pub struct Staff {
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct CharactersStaff {
   characters: Vec<Character>,
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   staff: Vec<Staff>,
 }
 

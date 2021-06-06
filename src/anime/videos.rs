@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
@@ -21,6 +22,8 @@ pub struct EpisodeVideo {
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Videos {
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   promo: Vec<PromoVideo>,
   episodes: Vec<EpisodeVideo>,
 }

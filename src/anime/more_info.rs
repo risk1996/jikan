@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
@@ -6,6 +7,8 @@ use std::cmp::PartialEq;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct MoreInfo {
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   #[serde(rename = "moreinfo")]
   more_info: Option<String>,
 }
@@ -72,7 +75,7 @@ mod tests {
       let more_info = MoreInfo::from_id(&client, id).await;
       mock.assert();
       assert!(
-        more_info?.more_info.is_none(),
+        more_info.is_err(),
         "Response for anime \"{}\" is not 404",
         name,
       );

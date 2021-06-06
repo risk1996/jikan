@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::common::tag::Tag;
 use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
@@ -76,6 +77,8 @@ pub struct Info {
   is_airing: bool,
   licensors: Vec<Tag>,
   members: u32,
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   opening_themes: Vec<String>,
   popularity: u32,
   premiered: Option<String>,

@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
@@ -36,6 +37,8 @@ pub struct Review {
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Reviews {
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   reviews: Vec<Review>,
 }
 

@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::common::tag::Tag;
 use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
@@ -59,6 +60,8 @@ pub struct Info {
   id: u32,
   image_url: String,
   members: u32,
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   popularity: u32,
   published: PublishingDetail,
   publishing: bool,

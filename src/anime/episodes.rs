@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
@@ -23,6 +24,8 @@ pub struct Episode {
 pub struct Episodes {
   episodes: Vec<Episode>,
   episodes_last_page: u32,
+  #[serde(flatten)]
+  metadata: RequestMetadata,
 }
 
 impl Episodes {

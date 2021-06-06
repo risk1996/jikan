@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::common::stats::Scores;
 use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
@@ -19,6 +20,8 @@ pub struct ListStats {
 pub struct Stats {
   #[serde(flatten)]
   list_stats: ListStats,
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   scores: Scores,
 }
 

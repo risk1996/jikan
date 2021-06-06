@@ -1,4 +1,5 @@
 use crate::common::error::JikanError;
+use crate::common::request::RequestMetadata;
 use crate::common::user_updates::User;
 use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
@@ -18,6 +19,8 @@ pub enum Status {
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct UserUpdates {
+  #[serde(flatten)]
+  metadata: RequestMetadata,
   users: Vec<User<Status>>,
 }
 
