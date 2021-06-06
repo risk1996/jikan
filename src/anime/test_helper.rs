@@ -1,14 +1,11 @@
-#[cfg(test)]
 use std::clone::Clone;
 
-#[cfg(test)]
 #[derive(Clone)]
 pub struct AnimeTestSuite {
   pub id: u32,
   pub name: String,
 }
 
-#[cfg(test)]
 pub fn get_valid_animes() -> Vec<AnimeTestSuite> {
   vec![
     AnimeTestSuite {
@@ -22,7 +19,6 @@ pub fn get_valid_animes() -> Vec<AnimeTestSuite> {
   ]
 }
 
-#[cfg(test)]
 pub fn get_invalid_animes() -> Vec<AnimeTestSuite> {
   vec![AnimeTestSuite {
     id: 4207,
@@ -30,7 +26,6 @@ pub fn get_invalid_animes() -> Vec<AnimeTestSuite> {
   }]
 }
 
-#[cfg(test)]
 pub fn get_pages() -> Vec<u32> {
   vec![1, 999]
 }

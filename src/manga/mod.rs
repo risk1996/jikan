@@ -21,7 +21,8 @@ pub use self::stats::{Stats, *};
 pub use self::user_updates::{UserUpdates, *};
 use crate::common::error::JikanError;
 pub use crate::common::{
-  forum::*, news::*, pictures::*, recommendations::*, stats::*, tag::*, user_updates::*,
+  characters::*, forum::*, news::*, pictures::*, recommendations::*, stats::*, tag::*,
+  user_updates::*,
 };
 use crate::utils::httpc::JikanHttpClient;
 

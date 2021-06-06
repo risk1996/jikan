@@ -1,6 +1,7 @@
+use crate::common::characters::CharacterRole;
 use crate::common::error::JikanError;
 use crate::common::request::RequestMetadata;
-use crate::common::tag::Tag;
+use crate::common::staff::StaffPosition;
 use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
@@ -8,82 +9,67 @@ use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct PublishingDetail {
-  from: Option<DateTime<FixedOffset>>,
-  #[serde(rename = "string")]
-  text: String,
-  to: Option<DateTime<FixedOffset>>,
-}
-
-#[derive(Debug, Deserialize, PartialEq, Serialize)]
-pub enum PublishingStatus {
-  Finished,
-  Publishing,
+pub struct EntityBriefInfo {
+  #[serde(rename = "mal_id")]
+  id: u32,
+  image_url: String,
+  name: String,
+  url: String,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
-pub struct MangaRelated {
-  #[serde(rename = "Alternative version")]
-  alternative_version: Option<Vec<Tag>>,
-  #[serde(rename = "Adaptation")]
-  adaptation: Option<Vec<Tag>>,
-  #[serde(rename = "Other")]
-  other: Option<Vec<Tag>>,
-  #[serde(rename = "Side story")]
-  side_story: Option<Vec<Tag>>,
-  #[serde(rename = "Spin-off")]
-  spin_off: Option<Vec<Tag>>,
+pub struct AnimeStaffPosition {
+  anime: EntityBriefInfo,
+  position: StaffPosition,
 }
 
 #[derive(Debug, Deserialize, PartialEq, Serialize)]
-pub enum MangaType {
-  Doujinshi,
-  #[serde(alias = "Light Novel")]
-  LightNovel,
-  Manga,
-  Manhwa,
-  Manhua,
-  #[serde(alias = "One-shot")]
-  OneShot,
+pub enum MangaPosition {
+  Art,
+  Story,
+  #[serde(alias = "Story & Art")]
+  StoryAndArt,
   #[serde(other)]
   Unknown,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct PublishedManga {
+  manga: EntityBriefInfo,
+  position: MangaPosition,
+}
+
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
+pub struct VoiceActingPosition {
+  anime: EntityBriefInfo,
+  character: EntityBriefInfo,
+  role: CharacterRole,
+}
+
+#[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Info {
-  authors: Vec<Tag>,
-  background: Option<String>,
-  chapters: Option<u32>,
-  favorites: u32,
-  genres: Vec<Tag>,
+  about: String,
+  alternate_names: Vec<String>,
+  anime_staff_positions: Vec<AnimeStaffPosition>,
+  birthday: DateTime<FixedOffset>,
+  family_name: String,
+  given_name: String,
   #[serde(rename = "mal_id")]
   id: u32,
   image_url: String,
-  members: u32,
+  member_favorites: u32,
   #[serde(flatten)]
   metadata: RequestMetadata,
-  popularity: u32,
-  published: PublishingDetail,
-  publishing: bool,
-  r#type: MangaType,
-  rank: Option<u32>,
-  related: MangaRelated,
-  score: Option<f32>,
-  scored_by: Option<u32>,
-  serializations: Vec<Tag>,
-  status: PublishingStatus,
-  synopsis: String,
-  title_english: Option<String>,
-  title_japanese: String,
-  title_synonyms: Vec<String>,
-  title: String,
+  name: String,
+  published_manga: Vec<PublishedManga>,
   url: String,
-  volumes: Option<u32>,
+  voice_acting_roles: Vec<VoiceActingPosition>,
+  website_url: Option<String>,
 }
 
 impl Info {
   pub fn get_url_path(id: u32) -> String {
-    format!("/manga/{}", id)
+    format!("/person/{}", id)
   }
 
   pub async fn from_id(client: &JikanHttpClient, id: u32) -> Result<Self, JikanError> {
@@ -94,7 +80,7 @@ impl Info {
 
 #[cfg(test)]
 mod tests {
-  use super::super::test_helper::{self, MangaTestSuite};
+  use super::super::test_helper::{self, PersonTestSuite};
   use super::*;
   use crate::utils::test_helper as utils_test_helper;
   use httpmock::MockServer;
@@ -105,13 +91,13 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for MangaTestSuite { id, name } in test_helper::get_valid_mangas() {
+    for PersonTestSuite { id, name } in test_helper::get_valid_persons() {
       let mock = server.mock(|when, then| {
         when.path(Info::get_url_path(id));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/manga/__test__/info_{}.json",
+            "src/person/__test__/info_{}.json",
             id
           )));
       });
@@ -129,20 +115,20 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for MangaTestSuite { id, name } in test_helper::get_invalid_mangas() {
+    for PersonTestSuite { id, name } in test_helper::get_invalid_persons() {
       let mock = server.mock(|when, then| {
         when.path(Info::get_url_path(id));
         then
           .status(404)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/manga/__test__/info_{}.json",
+            "src/person/__test__/info_{}.json",
             id
           )));
       });
 
       let info = Info::from_id(&client, id).await;
       mock.assert();
-      assert!(info.is_err(), "Response for manga \"{}\" is not 404", name);
+      assert!(info.is_err(), "Response for person \"{}\" is not 404", name);
     }
 
     Ok(())

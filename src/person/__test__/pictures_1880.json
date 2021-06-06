@@ -1,0 +1,15 @@
+{
+  "pictures": [
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/1/10942.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/1/10942.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/1/11083.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/1/11083.jpg"
+    }
+  ],
+  "request_cache_expiry": 86400,
+  "request_cached": false,
+  "request_hash": "request:person:49138d5514a08a17d5ba7526d96ba7106924e234"
+}

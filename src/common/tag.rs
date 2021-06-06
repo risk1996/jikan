@@ -11,7 +11,7 @@ pub enum TagType {
   #[serde(alias = "people")]
   People,
   #[serde(other)]
-  Other,
+  Unknown,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]

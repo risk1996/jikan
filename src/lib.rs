@@ -10,5 +10,5 @@ pub mod anime;
 #[cfg(feature = "manga")]
 pub mod manga;
 
-#[cfg(test)]
-mod tests {}
+#[cfg(feature = "person")]
+pub mod person;

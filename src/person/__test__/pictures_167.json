@@ -1,0 +1,35 @@
+{
+  "pictures": [
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/3/12543.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/3/12543.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/3/14093.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/3/14093.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/2/39775.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/2/39775.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/3/44233.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/3/44233.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/1/44420.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/1/44420.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/3/45639.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/3/45639.jpg"
+    },
+    {
+      "large": "https://cdn.myanimelist.net/images/voiceactors/3/60808.jpg",
+      "small": "https://cdn.myanimelist.net/images/voiceactors/3/60808.jpg"
+    }
+  ],
+  "request_cache_expiry": 86400,
+  "request_cached": false,
+  "request_hash": "request:person:9fe9517594a66c6b2cc6bf7ce2ef657196b91afd"
+}

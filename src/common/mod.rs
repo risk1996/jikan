@@ -1,30 +1,29 @@
 pub mod error;
 pub mod request;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga", feature = "person"))]
+pub mod characters;
+
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod forum;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod news;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga", feature = "person"))]
 pub mod pictures;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "person"))]
+pub mod staff;
+
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod stats;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod recommendations;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod tag;
 
-#[cfg(feature = "anime")]
-#[cfg(feature = "manga")]
+#[cfg(any(feature = "anime", feature = "manga"))]
 pub mod user_updates;

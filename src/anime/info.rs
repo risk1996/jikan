@@ -45,7 +45,7 @@ pub enum AnimeSource {
   Music,
   Original,
   #[serde(other)]
-  Other,
+  Unknown,
 }
 
 #[derive(Debug, Deserialize, PartialEq, Serialize)]
