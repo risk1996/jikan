@@ -9,6 +9,8 @@ Rust wrapper for [Jikan V3](https://jikan.moe) (unofficial MyAnimeList REST API)
 - [Docs](#docs)
 - [Usage](#usage)
   - [Anime](#anime)
+  - [Manga](#manga)
+  - [Person](#person)
 - [Maintainers](#maintainers)
 
 ## TODO
