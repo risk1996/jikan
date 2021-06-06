@@ -1,5 +1,5 @@
-use super::super::common::error::JikanError;
-use super::super::utils::httpc::JikanHttpClient;
+use crate::common::error::JikanError;
+use crate::utils::httpc::JikanHttpClient;
 use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
@@ -48,9 +48,9 @@ impl Episodes {
 
 #[cfg(test)]
 mod tests {
-  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::test_helper::{self, AnimeTestSuite};
   use super::*;
+  use crate::utils::test_helper as utils_test_helper;
   use httpmock::MockServer;
   use std::error::Error;
 

@@ -1,6 +1,6 @@
-use super::super::common::error::JikanError;
-use super::super::common::news::NewsArticle;
-use super::super::utils::httpc::JikanHttpClient;
+use crate::common::error::JikanError;
+use crate::common::news::NewsArticle;
+use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
@@ -23,9 +23,9 @@ impl News {
 
 #[cfg(test)]
 mod tests {
-  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::test_helper::{self, AnimeTestSuite};
   use super::*;
+  use crate::utils::test_helper as utils_test_helper;
   use httpmock::MockServer;
   use std::error::Error;
 

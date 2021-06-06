@@ -1,5 +1,5 @@
 extern crate hyper;
-use super::super::common::error::JikanError;
+use crate::common::error::JikanError;
 use hyper::{body, client::HttpConnector, Body, Client, Response, Uri};
 use hyper_tls::HttpsConnector;
 use serde::Deserialize;

@@ -19,11 +19,11 @@ pub use self::recommendations::{Recommendations, *};
 pub use self::reviews::{Reviews, *};
 pub use self::stats::{Stats, *};
 pub use self::user_updates::{UserUpdates, *};
-use super::common::error::JikanError;
-pub use super::common::{
+use crate::common::error::JikanError;
+pub use crate::common::{
   forum::*, news::*, pictures::*, recommendations::*, stats::*, tag::*, user_updates::*,
 };
-use super::utils::httpc::JikanHttpClient;
+use crate::utils::httpc::JikanHttpClient;
 
 #[cfg(test)]
 mod test_helper;

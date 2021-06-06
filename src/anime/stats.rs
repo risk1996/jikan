@@ -1,6 +1,6 @@
-use super::super::common::error::JikanError;
-use super::super::common::stats::Scores;
-use super::super::utils::httpc::JikanHttpClient;
+use crate::common::error::JikanError;
+use crate::common::stats::Scores;
+use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
@@ -35,9 +35,9 @@ impl Stats {
 
 #[cfg(test)]
 mod tests {
-  use super::super::super::utils::test_helper as utils_test_helper;
   use super::super::test_helper::{self, AnimeTestSuite};
   use super::*;
+  use crate::utils::test_helper as utils_test_helper;
   use httpmock::MockServer;
   use std::error::Error;
 
