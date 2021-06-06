@@ -24,6 +24,9 @@ pub use self::stats::{Stats, *};
 pub use self::user_updates::{UserUpdates, *};
 pub use self::videos::{Videos, *};
 use super::common::error::JikanError;
+pub use super::common::{
+  forum::*, news::*, pictures::*, recommendations::*, stats::*, tag::*, user_updates::*,
+};
 use super::utils::httpc::JikanHttpClient;
 
 #[cfg(test)]

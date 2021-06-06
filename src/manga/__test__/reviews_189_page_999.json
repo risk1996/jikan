@@ -1,0 +1,6 @@
+{
+  "error": "404 on https://myanimelist.net/manga/189/jikan/reviews?p=999",
+  "message": "Resource does not exist",
+  "status": 404,
+  "type": "BadResponseException"
+}

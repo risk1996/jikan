@@ -1,0 +1,607 @@
+{
+  "recommendations": [
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/201605.jpg?s=0d94e7f501f1c2159cd97133b7e7b4bd",
+      "mal_id": 14790,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-14790",
+      "title": "Magi",
+      "url": "https://myanimelist.net/manga/14790/Magi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/28084.jpg?s=f3286e098586e132add9a0909e169a32",
+      "mal_id": 24,
+      "recommendation_count": 8,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/24-25",
+      "title": "D.Gray-man",
+      "url": "https://myanimelist.net/manga/24/DGray-man"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/5/185498.jpg?s=09ec431f855e51918ef49e7111e180b2",
+      "mal_id": 3031,
+      "recommendation_count": 5,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3031",
+      "title": "Pandora Hearts",
+      "url": "https://myanimelist.net/manga/3031/Pandora_Hearts"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/160868.jpg?s=09b388b0a4b7c426c2d22994c99ed5b9",
+      "mal_id": 3438,
+      "recommendation_count": 4,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3438",
+      "title": "Psyren",
+      "url": "https://myanimelist.net/manga/3438/Psyren"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/37846.jpg?s=bdda4d1c1d85237aead7d545f876c077",
+      "mal_id": 23390,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-23390",
+      "title": "Shingeki no Kyojin",
+      "url": "https://myanimelist.net/manga/23390/Shingeki_no_Kyojin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/179023.jpg?s=e79cbbeb57b734d4b5f6d29f94162627",
+      "mal_id": 96792,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-96792",
+      "title": "Kimetsu no Yaiba",
+      "url": "https://myanimelist.net/manga/96792/Kimetsu_no_Yaiba"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/190005.jpg?s=666ebeb516a2ad2d94fbd9e1be0483a1",
+      "mal_id": 100035,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-100035",
+      "title": "Tongari Boushi no Atelier",
+      "url": "https://myanimelist.net/manga/100035/Tongari_Boushi_no_Atelier"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/27076.jpg?s=d0ad49a7c58eeaf3f52871ef9e758e09",
+      "mal_id": 9,
+      "recommendation_count": 3,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/9-25",
+      "title": "Tsubasa: RESERVoir CHRoNiCLE",
+      "url": "https://myanimelist.net/manga/9/Tsubasa__RESERVoir_CHRoNiCLE"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/57607.jpg?s=02c2afb29218b9918e76594058828d07",
+      "mal_id": 50,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-50",
+      "title": "Shaman King",
+      "url": "https://myanimelist.net/manga/50/Shaman_King"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/32965.jpg?s=02b12f7bb65a465eb543786bf390310e",
+      "mal_id": 20694,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-20694",
+      "title": "Tripeace",
+      "url": "https://myanimelist.net/manga/20694/Tripeace"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/185359.jpg?s=0a27c8d7d37bfc0632d8618cc999f539",
+      "mal_id": 974,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-974",
+      "title": "Basara",
+      "url": "https://myanimelist.net/manga/974/Basara"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/179882.jpg?s=dac8109140406ca296cf4946296b5037",
+      "mal_id": 1706,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1706",
+      "title": "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",
+      "url": "https://myanimelist.net/manga/1706/JoJo_no_Kimyou_na_Bouken_Part_7__Steel_Ball_Run"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/89677.jpg?s=8bf7f85c789027448f1f4995eeb846d6",
+      "mal_id": 3099,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3099",
+      "title": "Embalming: The Another Tale of Frankenstein",
+      "url": "https://myanimelist.net/manga/3099/Embalming__The_Another_Tale_of_Frankenstein"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/154448.jpg?s=e814503e64aa7e7e7dae1f6983204ad9",
+      "mal_id": 1709,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1709",
+      "title": "Tegamibachi",
+      "url": "https://myanimelist.net/manga/1709/Tegamibachi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/149815.jpg?s=e786510bc52cbc51c37f1ea01e1374b6",
+      "mal_id": 51233,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-51233",
+      "title": "Arslan Senki",
+      "url": "https://myanimelist.net/manga/51233/Arslan_Senki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/117681.jpg?s=6dc21454a32172a2e1783bd664668a22",
+      "mal_id": 11,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/11-25",
+      "title": "Naruto",
+      "url": "https://myanimelist.net/manga/11/Naruto"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/1727.jpg?s=782c17b8c9f4432ce3c7aea2c2fcae6e",
+      "mal_id": 1652,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1652",
+      "title": "Shanghai Youma Kikai",
+      "url": "https://myanimelist.net/manga/1652/Shanghai_Youma_Kikai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/192445.jpg?s=cbd958f9856b0815b80482e980068f09",
+      "mal_id": 26,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-26",
+      "title": "Hunter x Hunter",
+      "url": "https://myanimelist.net/manga/26/Hunter_x_Hunter"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/188810.jpg?s=58d78a05bea87f51b2e922ec3b0168c4",
+      "mal_id": 13492,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-13492",
+      "title": "Ao no Exorcist",
+      "url": "https://myanimelist.net/manga/13492/Ao_no_Exorcist"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/180035.jpg?s=7c74c7dd547229b3ca5d10cc784aba5c",
+      "mal_id": 39,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-39",
+      "title": "Zombie Powder.",
+      "url": "https://myanimelist.net/manga/39/Zombie_Powder"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/187850.jpg?s=c8ff88924159c79358719bf586f25308",
+      "mal_id": 48151,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-48151",
+      "title": "World Trigger",
+      "url": "https://myanimelist.net/manga/48151/World_Trigger"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/149583.jpg?s=5c521aa8c5a79a41fc64c4ef3ed70b07",
+      "mal_id": 41,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-41",
+      "title": "Busou Renkin",
+      "url": "https://myanimelist.net/manga/41/Busou_Renkin"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/55387.jpg?s=c8b9fb4238d5f730afce681a8acc42b1",
+      "mal_id": 426,
+      "recommendation_count": 2,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-426",
+      "title": "Pumpkin Scissors",
+      "url": "https://myanimelist.net/manga/426/Pumpkin_Scissors"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/121263.jpg?s=3623ad8f74212040eab1ef799e954948",
+      "mal_id": 61189,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-61189",
+      "title": "Mahoutsukai no Yome",
+      "url": "https://myanimelist.net/manga/61189/Mahoutsukai_no_Yome"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/558.jpg?s=4c8a0dfbb454ae5ef497fe033f4cff38",
+      "mal_id": 486,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-486",
+      "title": "Priest",
+      "url": "https://myanimelist.net/manga/486/Priest"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/126295.jpg?s=0307e5fae9719951f41686f0adff25d6",
+      "mal_id": 53,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-53",
+      "title": "Yuu☆Yuu☆Hakusho",
+      "url": "https://myanimelist.net/manga/53/Yuu☆Yuu☆Hakusho"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/63963.jpg?s=c4502a3bb54190992d0a86e84e53967b",
+      "mal_id": 24822,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-24822",
+      "title": "Trinity Seven: 7-nin no Mashotsukai",
+      "url": "https://myanimelist.net/manga/24822/Trinity_Seven__7-nin_no_Mashotsukai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/187665.jpg?s=1c270e5900141b65a8b8375cdc44904f",
+      "mal_id": 25132,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-25132",
+      "title": "Akame ga Kill!",
+      "url": "https://myanimelist.net/manga/25132/Akame_ga_Kill"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/149519.jpg?s=a9e28a9521acdf58c94fd98d83ad86ba",
+      "mal_id": 79667,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-79667",
+      "title": "Baymax",
+      "url": "https://myanimelist.net/manga/79667/Baymax"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/62941.jpg?s=ca5fd8527eafdeb90b1abf58ec5fc2c3",
+      "mal_id": 105,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-105",
+      "title": "Kekkaishi",
+      "url": "https://myanimelist.net/manga/105/Kekkaishi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/155825.jpg?s=64b8cd58bea9efcb49452c9437458889",
+      "mal_id": 70323,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-70323",
+      "title": "Rengoku Hime",
+      "url": "https://myanimelist.net/manga/70323/Rengoku_Hime"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/1431.jpg?s=36d26a063ff8a28f14ebe2e16f29f27c",
+      "mal_id": 1474,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1474",
+      "title": "Devilman",
+      "url": "https://myanimelist.net/manga/1474/Devilman"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/21235.jpg?s=79e59877f65748d8322bf7883d104621",
+      "mal_id": 3749,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3749",
+      "title": "Umineko no Naku Koro ni - Episode 1: Legend of the Golden Witch",
+      "url": "https://myanimelist.net/manga/3749/Umineko_no_Naku_Koro_ni_-_Episode_1__Legend_of_the_Golden_Witch"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/4/126019.jpg?s=c44be5517db0268b774c6f297226c8f4",
+      "mal_id": 1420,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1420",
+      "title": "Zelda no Densetsu: Fushigi no Kinomi - Daichi no Shou",
+      "url": "https://myanimelist.net/manga/1420/Zelda_no_Densetsu__Fushigi_no_Kinomi_-_Daichi_no_Shou"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/231500.jpg?s=bce15934e60aca6ccdcb515a1f6b68a7",
+      "mal_id": 25096,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-25096",
+      "title": "Gin no Saji",
+      "url": "https://myanimelist.net/manga/25096/Gin_no_Saji"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/178996.jpg?s=d5e75dbdfb329203111c854e27e3b37c",
+      "mal_id": 91037,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-91037",
+      "title": "Enen no Shouboutai",
+      "url": "https://myanimelist.net/manga/91037/Enen_no_Shouboutai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/208522.jpg?s=d4c4baf56356696201a3ba8b8a67a35c",
+      "mal_id": 112318,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-112318",
+      "title": "Jigokuraku",
+      "url": "https://myanimelist.net/manga/112318/Jigokuraku"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/188925.jpg?s=18b1d30b74bf96b476068901f579e408",
+      "mal_id": 642,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-642",
+      "title": "Vinland Saga",
+      "url": "https://myanimelist.net/manga/642/Vinland_Saga"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/145061.jpg?s=35bee983129e093430e9a078162d2b34",
+      "mal_id": 698,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-698",
+      "title": "Neon Genesis Evangelion",
+      "url": "https://myanimelist.net/manga/698/Neon_Genesis_Evangelion"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/186468.jpg?s=05bc908bdb295a55ab175385283b5d12",
+      "mal_id": 98436,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-98436",
+      "title": "Youjo Senki",
+      "url": "https://myanimelist.net/manga/98436/Youjo_Senki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/172736.jpg?s=ba2dbabc5611808a3b1e3eb178e65c6c",
+      "mal_id": 1342,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1342",
+      "title": "Baccano!",
+      "url": "https://myanimelist.net/manga/1342/Baccano"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/115755.jpg?s=77fe0671b4bdbf43198cf24416436d34",
+      "mal_id": 67617,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-67617",
+      "title": "Tate no Yuusha no Nariagari",
+      "url": "https://myanimelist.net/manga/67617/Tate_no_Yuusha_no_Nariagari"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/159808.jpg?s=07c4af86e98319298ef532c085b37036",
+      "mal_id": 908,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-908",
+      "title": "Soul Eater",
+      "url": "https://myanimelist.net/manga/908/Soul_Eater"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/172209.jpg?s=5c3dcec9fab79a65d8305300e25f473c",
+      "mal_id": 869,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-869",
+      "title": "Konjiki no Gash!!",
+      "url": "https://myanimelist.net/manga/869/Konjiki_no_Gash"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/209180.jpg?s=f2c3d7c64451cd6e648f5909fbb765b3",
+      "mal_id": 110967,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-110967",
+      "title": "Marry Grave",
+      "url": "https://myanimelist.net/manga/110967/Marry_Grave"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/127583.jpg?s=1e6215fe6f6de484196ce9208f436ca5",
+      "mal_id": 22,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/22-25",
+      "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
+      "url": "https://myanimelist.net/manga/22/Rurouni_Kenshin__Meiji_Kenkaku_Romantan"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/156624.jpg?s=237768196e315e268bbf5709d52af55c",
+      "mal_id": 651,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-651",
+      "title": "Kaze no Tani no Nausicaä",
+      "url": "https://myanimelist.net/manga/651/Kaze_no_Tani_no_Nausicaä"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/160213.jpg?s=5b411642ec7aff6a1cc0534b6566a2a8",
+      "mal_id": 4608,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-4608",
+      "title": "Break Blade",
+      "url": "https://myanimelist.net/manga/4608/Break_Blade"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/54545.jpg?s=cedcb190877bac2a2403ce36caac17bf",
+      "mal_id": 42,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-42",
+      "title": "Dragon Ball",
+      "url": "https://myanimelist.net/manga/42/Dragon_Ball"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/511.jpg?s=64efff7071dd3bab7332d6670e821998",
+      "mal_id": 32,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-32",
+      "title": "666 Satan",
+      "url": "https://myanimelist.net/manga/32/666_Satan"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/193993.jpg?s=8969446c3803a8cf423a6c7133aa050b",
+      "mal_id": 2033,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-2033",
+      "title": "Juushin Enbu",
+      "url": "https://myanimelist.net/manga/2033/Juushin_Enbu"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/217533.jpg?s=878819d0a4eb7633219060bf6dda349a",
+      "mal_id": 10,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/10-25",
+      "title": "xxxHOLiC",
+      "url": "https://myanimelist.net/manga/10/xxxHOLiC"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/198883.jpg?s=301bb6652e2561adbb4e2470e75310f4",
+      "mal_id": 3073,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3073",
+      "title": "Kenja no Ishi",
+      "url": "https://myanimelist.net/manga/3073/Kenja_no_Ishi"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/177657.jpg?s=b2c1bcc9f27fd1e698cf00f4f72ba95f",
+      "mal_id": 6140,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-6140",
+      "title": "Darren Shan",
+      "url": "https://myanimelist.net/manga/6140/Darren_Shan"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/174740.jpg?s=d454a4738c58d5ff97db347a23881618",
+      "mal_id": 344,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-344",
+      "title": "ES: Eternal Sabbath",
+      "url": "https://myanimelist.net/manga/344/ES__Eternal_Sabbath"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/107543.jpg?s=d48467fca0cf453b78b503e3807f16b4",
+      "mal_id": 62677,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-62677",
+      "title": "Hangyaku no Kage Tsukai",
+      "url": "https://myanimelist.net/manga/62677/Hangyaku_no_Kage_Tsukai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/10582.jpg?s=8bfdd1dda5b9d88f54cd1c2254c167e7",
+      "mal_id": 948,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-948",
+      "title": "Souten no Koumori",
+      "url": "https://myanimelist.net/manga/948/Souten_no_Koumori"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/21417.jpg?s=090644f77f731253e73b04c9fc9fca74",
+      "mal_id": 1349,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-1349",
+      "title": "07-Ghost",
+      "url": "https://myanimelist.net/manga/1349/07-Ghost"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/5849.jpg?s=7baee1b53e4c3becd2ea0631c5972bec",
+      "mal_id": 4746,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-4746",
+      "title": "Ookami ga Kuru!",
+      "url": "https://myanimelist.net/manga/4746/Ookami_ga_Kuru"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/149.jpg?s=1181a24a3e7c5cd64a18d57703d34f22",
+      "mal_id": 267,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-267",
+      "title": "Hellsing",
+      "url": "https://myanimelist.net/manga/267/Hellsing"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/19400.jpg?s=d6177356169f126133b1017d5400834a",
+      "mal_id": 13710,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-13710",
+      "title": "Brothers",
+      "url": "https://myanimelist.net/manga/13710/Brothers"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/5/25982.jpg?s=066ae69ac2050a16285dce7c9464f1ae",
+      "mal_id": 583,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-583",
+      "title": "Claymore",
+      "url": "https://myanimelist.net/manga/583/Claymore"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/4/79715.jpg?s=e708da2fb9922624e03f75b424fa3457",
+      "mal_id": 8456,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-8456",
+      "title": "½ Prince",
+      "url": "https://myanimelist.net/manga/8456/½_Prince"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/88095.jpg?s=e9be3e4dc08f7d14f6566ed3fc43009f",
+      "mal_id": 45221,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-45221",
+      "title": "Hungry Joker",
+      "url": "https://myanimelist.net/manga/45221/Hungry_Joker"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/163592.jpg?s=b6141872ea42084e4a5067a04025e706",
+      "mal_id": 55869,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-55869",
+      "title": "Rokka no Yuusha",
+      "url": "https://myanimelist.net/manga/55869/Rokka_no_Yuusha"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/54453.jpg?s=64e676c2d2ea8370b400a0503db2bc46",
+      "mal_id": 21,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/21-25",
+      "title": "Death Note",
+      "url": "https://myanimelist.net/manga/21/Death_Note"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/3828.jpg?s=ae72c202a07a029a485cbcac0c07f0c3",
+      "mal_id": 3444,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-3444",
+      "title": "Raiden-18",
+      "url": "https://myanimelist.net/manga/3444/Raiden-18"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/153111.jpg?s=2c89018c27b7866657c0ae33c208a1d2",
+      "mal_id": 44485,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-44485",
+      "title": "Nanatsu no Taizai",
+      "url": "https://myanimelist.net/manga/44485/Nanatsu_no_Taizai"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/32468.jpg?s=4dcb0285c31accefabbe68fc4ed26456",
+      "mal_id": 676,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-676",
+      "title": "InuYasha",
+      "url": "https://myanimelist.net/manga/676/InuYasha"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/158907.jpg?s=5f913dec9c7a7811ae80187babeef3c1",
+      "mal_id": 12922,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-12922",
+      "title": "+C: Sword and Cornett",
+      "url": "https://myanimelist.net/manga/12922/_C__Sword_and_Cornett"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/14440.jpg?s=0f2875f810e680d4f9c7498f69c0e749",
+      "mal_id": 10740,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-10740",
+      "title": "Ilegenes: Kokuyou no Kiseki",
+      "url": "https://myanimelist.net/manga/10740/Ilegenes__Kokuyou_no_Kiseki"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/147023.jpg?s=c4abbcc065dba88ce222ae842c1d99a2",
+      "mal_id": 25855,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-25855",
+      "title": "Gunka no Baltzar",
+      "url": "https://myanimelist.net/manga/25855/Gunka_no_Baltzar"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/2/147855.jpg?s=e14693b977988d6eab824d83a9f19c5f",
+      "mal_id": 58717,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-58717",
+      "title": "Unknown",
+      "url": "https://myanimelist.net/manga/58717/Unknown"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/1/198155.jpg?s=bd63a16051b69954ff0f01d376e3430d",
+      "mal_id": 373,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-373",
+      "title": "Meteor Methuselah",
+      "url": "https://myanimelist.net/manga/373/Meteor_Methuselah"
+    },
+    {
+      "image_url": "https://cdn.myanimelist.net/images/manga/3/186922.jpg?s=fdb8d7cec23c00593d8ae08ad14dd89d",
+      "mal_id": 100128,
+      "recommendation_count": 1,
+      "recommendation_url": "https://myanimelist.net/recommendations/manga/25-100128",
+      "title": "Yakusoku no Neverland",
+      "url": "https://myanimelist.net/manga/100128/Yakusoku_no_Neverland"
+    }
+  ],
+  "request_cache_expiry": 75908,
+  "request_cached": true,
+  "request_hash": "request:manga:e05d0bb1050d818b9eff2109adbbe2694c8cf313"
+}

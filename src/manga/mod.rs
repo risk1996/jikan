@@ -4,7 +4,10 @@ mod info;
 mod more_info;
 mod news;
 mod pictures;
+mod recommendations;
+mod reviews;
 mod stats;
+mod user_updates;
 
 pub use self::characters::{Characters, *};
 pub use self::forum::{Forum, *};
@@ -12,8 +15,14 @@ pub use self::info::{Info, *};
 pub use self::more_info::{MoreInfo, *};
 pub use self::news::{News, *};
 pub use self::pictures::{Pictures, *};
+pub use self::recommendations::{Recommendations, *};
+pub use self::reviews::{Reviews, *};
 pub use self::stats::{Stats, *};
+pub use self::user_updates::{UserUpdates, *};
 use super::common::error::JikanError;
+pub use super::common::{
+  forum::*, news::*, pictures::*, recommendations::*, stats::*, tag::*, user_updates::*,
+};
 use super::utils::httpc::JikanHttpClient;
 
 #[cfg(test)]
@@ -62,5 +71,17 @@ impl Manga {
 
   pub async fn more_info(&self) -> Result<MoreInfo, JikanError> {
     MoreInfo::from_id(&self.client, self.id).await
+  }
+
+  pub async fn reviews_at_page(&self, page: u32) -> Result<Reviews, JikanError> {
+    Reviews::from_id_at_page(&self.client, self.id, page).await
+  }
+
+  pub async fn recommendations(&self) -> Result<Recommendations, JikanError> {
+    Recommendations::from_id(&self.client, self.id).await
+  }
+
+  pub async fn user_updates_at_page(&self, page: u32) -> Result<UserUpdates, JikanError> {
+    UserUpdates::from_id_at_page(&self.client, self.id, page).await
   }
 }

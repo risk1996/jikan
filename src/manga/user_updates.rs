@@ -11,9 +11,9 @@ pub enum Status {
   Dropped,
   #[serde(alias = "On-Hold")]
   OnHold,
-  #[serde(alias = "Plan to Watch")]
-  PlanToWatch,
-  Watching,
+  #[serde(alias = "Plan to Read")]
+  PlanToRead,
+  Reading,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
@@ -23,7 +23,7 @@ pub struct UserUpdates {
 
 impl UserUpdates {
   pub fn get_url_path(id: u32, page: u32) -> String {
-    format!("/anime/{}/userupdates/{}", id, page)
+    format!("/manga/{}/userupdates/{}", id, page)
   }
 
   pub async fn from_id_at_page(
@@ -45,7 +45,7 @@ impl UserUpdates {
 #[cfg(test)]
 mod tests {
   use super::super::super::utils::test_helper as utils_test_helper;
-  use super::super::test_helper::{self, AnimeTestSuite};
+  use super::super::test_helper::{self, MangaTestSuite};
   use super::*;
   use httpmock::MockServer;
   use std::error::Error;
@@ -56,13 +56,13 @@ mod tests {
     let client = JikanHttpClient::new(&server.base_url());
     let page = 1;
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_valid_mangas() {
       let mock = server.mock(|when, then| {
         when.path(UserUpdates::get_url_path(id, page));
         then
           .status(200)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/user_updates_{}_page_{}.json",
+            "src/manga/__test__/user_updates_{}_page_{}.json",
             id, page
           )));
       });
@@ -81,13 +81,13 @@ mod tests {
     let client = JikanHttpClient::new(&server.base_url());
     let page = 1;
 
-    for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_invalid_mangas() {
       let mock = server.mock(|when, then| {
         when.path(UserUpdates::get_url_path(id, page));
         then
           .status(404)
           .body(utils_test_helper::file_to_string(&format!(
-            "src/anime/__test__/user_updates_{}_page_{}.json",
+            "src/manga/__test__/user_updates_{}_page_{}.json",
             id, page
           )));
       });
@@ -96,7 +96,7 @@ mod tests {
       mock.assert();
       assert!(
         user_updates.is_err(),
-        "Response for anime \"{}\" is not 404",
+        "Response for manga \"{}\" is not 404",
         name,
       );
     }
@@ -109,14 +109,14 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_valid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_valid_mangas() {
       for page in test_helper::get_pages() {
         let mock = server.mock(|when, then| {
           when.path(UserUpdates::get_url_path(id, page));
           then
             .status(if page == 1 { 200 } else { 404 })
             .body(utils_test_helper::file_to_string(&format!(
-              "src/anime/__test__/user_updates_{}_page_{}.json",
+              "src/manga/__test__/user_updates_{}_page_{}.json",
               id, page
             )));
         });
@@ -128,7 +128,7 @@ mod tests {
         } else {
           assert!(
             user_updates.is_err(),
-            "Response for anime \"{}\" is not 404",
+            "Response for manga \"{}\" is not 404",
             name,
           );
         }
@@ -143,14 +143,14 @@ mod tests {
     let server = MockServer::start();
     let client = JikanHttpClient::new(&server.base_url());
 
-    for AnimeTestSuite { id, name } in test_helper::get_invalid_animes() {
+    for MangaTestSuite { id, name } in test_helper::get_invalid_mangas() {
       for page in test_helper::get_pages() {
         let mock = server.mock(|when, then| {
           when.path(UserUpdates::get_url_path(id, page));
           then
             .status(404)
             .body(utils_test_helper::file_to_string(&format!(
-              "src/anime/__test__/user_updates_{}_page_{}.json",
+              "src/manga/__test__/user_updates_{}_page_{}.json",
               id, page
             )));
         });
@@ -158,7 +158,7 @@ mod tests {
         mock.assert();
         assert!(
           user_updates.is_err(),
-          "Response for anime \"{}\" is not 404",
+          "Response for manga \"{}\" is not 404",
           name,
         );
       }
