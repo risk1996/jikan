@@ -6,6 +6,7 @@ use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct PublishingDetail {
@@ -58,7 +59,7 @@ pub struct Info {
   genres: Vec<Tag>,
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   members: u32,
   #[serde(flatten)]
   metadata: RequestMetadata,
@@ -77,7 +78,7 @@ pub struct Info {
   title_japanese: String,
   title_synonyms: Vec<String>,
   title: String,
-  url: String,
+  url: Url,
   volumes: Option<u32>,
 }
 

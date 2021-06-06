@@ -4,20 +4,21 @@ use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct PromoVideo {
-  image_url: String,
+  image_url: Url,
   title: String,
-  video_url: String,
+  video_url: Url,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct EpisodeVideo {
   episode: String,
-  image_url: String,
+  image_url: Url,
   title: String,
-  url: String,
+  url: Url,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]

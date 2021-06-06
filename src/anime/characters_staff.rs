@@ -6,6 +6,7 @@ use crate::utils::httpc::JikanHttpClient;
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, PartialEq, Serialize)]
 pub enum VoiceActorLanguage {
@@ -27,20 +28,20 @@ pub enum VoiceActorLanguage {
 pub struct VoiceActor {
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   language: VoiceActorLanguage,
   name: String,
-  url: String,
+  url: Url,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct Character {
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   name: String,
   role: CharacterRole,
-  url: String,
+  url: Url,
   voice_actors: Vec<VoiceActor>,
 }
 
@@ -48,9 +49,9 @@ pub struct Character {
 pub struct Staff {
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   name: String,
-  url: String,
+  url: Url,
   positions: Vec<StaffPosition>,
 }
 

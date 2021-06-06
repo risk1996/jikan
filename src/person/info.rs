@@ -7,14 +7,15 @@ use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct EntityBriefInfo {
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   name: String,
-  url: String,
+  url: Url,
 }
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
@@ -56,13 +57,13 @@ pub struct Info {
   given_name: String,
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   member_favorites: u32,
   #[serde(flatten)]
   metadata: RequestMetadata,
   name: String,
   published_manga: Vec<PublishedManga>,
-  url: String,
+  url: Url,
   voice_acting_roles: Vec<VoiceActingPosition>,
   website_url: Option<String>,
 }

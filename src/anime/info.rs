@@ -6,6 +6,7 @@ use chrono::{DateTime, FixedOffset};
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, Getters, PartialEq, Serialize)]
 pub struct AiringDetail {
@@ -72,7 +73,7 @@ pub struct Info {
   genres: Vec<Tag>,
   #[serde(rename = "mal_id")]
   id: u32,
-  image_url: String,
+  image_url: Url,
   #[serde(rename = "airing")]
   is_airing: bool,
   licensors: Vec<Tag>,
@@ -97,7 +98,7 @@ pub struct Info {
   title: String,
   trailer_url: Option<String>,
   r#type: AnimeType,
-  url: String,
+  url: Url,
 }
 
 impl Info {

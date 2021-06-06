@@ -1,6 +1,7 @@
 use derive_getters::Getters;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialEq;
+use url::Url;
 
 #[derive(Debug, Deserialize, PartialEq, Serialize)]
 pub enum TagType {
@@ -20,5 +21,5 @@ pub struct Tag {
   id: u32,
   r#type: TagType,
   name: String,
-  url: String,
+  url: Url,
 }

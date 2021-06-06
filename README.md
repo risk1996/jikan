@@ -1,6 +1,6 @@
 # Jikan
 
-Rust wrapper for [Jikan](https://jikan.moe) (unofficial MyAnimeList REST API).
+Rust wrapper for [Jikan V3](https://jikan.moe) (unofficial MyAnimeList REST API).
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ Rust wrapper for [Jikan](https://jikan.moe) (unofficial MyAnimeList REST API).
 
 ## TODO
 
-- Refactor to proper URL type
 - Mock doc test
 - Make non-2xx HTTP response status code an error
 - Add badges to README
