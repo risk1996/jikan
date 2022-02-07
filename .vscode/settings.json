@@ -1,4 +1,6 @@
 {
+  "cSpell.words": ["Jikan"],
+  "peacock.color": "#2e51a2",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3c66c7",
     "activityBar.activeBorder": "#631c32",
@@ -7,16 +9,15 @@
     "activityBar.inactiveForeground": "#e7e7e799",
     "activityBarBadge.background": "#631c32",
     "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#3c66c7",
     "statusBar.background": "#2e51a2",
     "statusBar.foreground": "#e7e7e7",
     "statusBarItem.hoverBackground": "#3c66c7",
+    "statusBarItem.remoteBackground": "#2e51a2",
+    "statusBarItem.remoteForeground": "#e7e7e7",
     "titleBar.activeBackground": "#2e51a2",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#2e51a299",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "sash.hoverBorder": "#3c66c7",
-    "statusBarItem.remoteBackground": "#2e51a2",
-    "statusBarItem.remoteForeground": "#e7e7e7"
-  },
-  "peacock.color": "#2e51a2"
+    "titleBar.inactiveForeground": "#e7e7e799"
+  }
 }

@@ -1,13 +1,17 @@
 # Jikan
 
-Rust wrapper for [Jikan V3](https://jikan.moe) (unofficial MyAnimeList REST API).
+Rust wrapper for [Jikan, unofficial MyAnimeList API](https://jikan.moe).
+Currently we are supporting these version:
+
+- [V4 API Docs](https://docs.api.jikan.moe)
+- [V3 API Docs](https://jikan.docs.apiary.io) **DEPRECATED**
 
 ## Table of Contents
 
 - [TODO](#todo)
 - [Installation](#installation)
 - [Docs](#docs)
-- [Usage](#usage)
+- [Usage V3](#usage-v3)
   - [Anime](#anime)
   - [Manga](#manga)
   - [Person](#person)
@@ -46,12 +50,12 @@ jikan="<version>"
 
 Coming Soon
 
-## Usage
+## Usage (V3)
 
 ### Anime
 
 ```rust
-use jikan::anime::*;
+use jikan::v3::anime::*;
 
 static PAGE: u32 = 1;
 
@@ -77,7 +81,7 @@ async fn main() -> Result<(), JikanError> {
 ### Manga
 
 ```rust
-use jikan::manga::*;
+use jikan::v3::manga::*;
 
 static PAGE: u32 = 1;
 
@@ -101,7 +105,7 @@ async fn main() -> Result<(), JikanError> {
 ### Person
 
 ```rust
-use jikan::person::*;
+use jikan::v3::person::*;
 
 async fn main() -> Result<(), JikanError> {
   let tetsuya_kakihara: Person = Person::new(167);
