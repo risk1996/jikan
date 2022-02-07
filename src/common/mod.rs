@@ -1,7 +1,12 @@
 pub mod error;
 pub mod request;
 
-#[cfg(any(feature = "anime", feature = "manga", feature = "person"))]
+#[cfg(any(
+  feature = "anime",
+  feature = "manga",
+  feature = "person",
+  feature = "character",
+))]
 pub mod characters;
 
 #[cfg(any(feature = "anime", feature = "manga"))]
@@ -27,3 +32,6 @@ pub mod tag;
 
 #[cfg(any(feature = "anime", feature = "manga"))]
 pub mod user_updates;
+
+#[cfg(any(feature = "anime", feature = "character"))]
+pub mod voice_actor;

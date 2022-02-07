@@ -29,8 +29,9 @@ cargo-husky = "1.5.0"
 httpmock = "0.5.8"
 
 [features]
-default = ["anime", "manga", "person"]
+default = ["anime", "manga", "person", "character"]
 
 anime = []
 manga = []
 person = []
+character = []

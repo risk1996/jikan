@@ -11,7 +11,9 @@ Rust wrapper for [Jikan V3](https://jikan.moe) (unofficial MyAnimeList REST API)
   - [Anime](#anime)
   - [Manga](#manga)
   - [Person](#person)
+- [Contributions](#contributions)
 - [Maintainers](#maintainers)
+- [License](#license)
 
 ## TODO
 
@@ -101,8 +103,6 @@ async fn main() -> Result<(), JikanError> {
 ```rust
 use jikan::person::*;
 
-static PAGE: u32 = 1;
-
 async fn main() -> Result<(), JikanError> {
   let tetsuya_kakihara: Person = Person::new(167);
   let tetsuya_kakihara_info: Info = tetsuya_kakihara.info().await?;
@@ -111,6 +111,11 @@ async fn main() -> Result<(), JikanError> {
   Ok(())
 }
 ```
+
+## Contributions
+
+I am doing this as a side project but any PRs are welcome!
+I might miss some things (especially some enums variants that does not show up in the test files).
 
 ## Maintainers
 

@@ -26,7 +26,7 @@ pub use self::videos::{Videos, *};
 use crate::common::error::JikanError;
 pub use crate::common::{
   characters::*, forum::*, news::*, pictures::*, recommendations::*, staff::*, stats::*, tag::*,
-  user_updates::*,
+  user_updates::*, voice_actor::*,
 };
 use crate::utils::httpc::JikanHttpClient;
 
