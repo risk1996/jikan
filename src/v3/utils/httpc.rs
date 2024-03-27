@@ -1,4 +1,3 @@
-extern crate hyper;
 use crate::v3::common::error::JikanError;
 use hyper::{body, client::HttpConnector, Body, Client, Response, Uri};
 use hyper_tls::HttpsConnector;

@@ -29,10 +29,13 @@ cargo-husky = "1.5.0"
 httpmock = "0.6.6"
 
 [features]
-default = ["v3"]
+default = ["v4"]
 
 v3 = ["anime_v3", "manga_v3", "person_v3", "character_v3"]
 anime_v3 = []
 manga_v3 = []
 person_v3 = []
 character_v3 = []
+
+v4 = ["anime_v4"]
+anime_v4 = []

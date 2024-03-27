@@ -21,9 +21,9 @@ Currently we are supporting these version:
 
 ## TODO
 
-- Mock doc test
-- Make non-2xx HTTP response status code an error
-- Add badges to README
+- Complete `anime` feature
+- Complete `manga` feature
+- Complete `person` feature
 - Complete `character` feature
 - Complete `search` feature
 - Complete `season`-related feature
@@ -35,7 +35,12 @@ Currently we are supporting these version:
 - Complete `user` feature
 - Complete `club` feature
 - Complete `meta` feature
-- Add mandatory throttling checking
+- Mock doc test
+- Make non-2xx HTTP response status code an error
+- Add badges to README
+- Add rate limiting rule
+- Add caching
+- Deprecate V3 when API is no longer maintained
 
 ## Installation
 
